@@ -1,0 +1,59 @@
+﻿@using Aminimanesh.Core.DTOs.ProjectDTOs
+@model CreateProjectDTO
+@{
+    ViewData["Title"] = "Add Project";
+}
+
+<div class="text-center">
+    <h1 class="h4 text-gray-900 mb-4">Create a Project!</h1>
+</div>
+<form class="user" asp-area="Admin" asp-controller="Project" asp-action="CreatePost" method="post" enctype="multipart/form-data">
+    <div class="form-group row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <input type="text" class="form-control" asp-for="@Model.Title"
+                   placeholder="Project Title">
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" asp-for="@Model.CustomerName"
+                   placeholder="Customer Name">
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" asp-for="@Model.CustomerLocation"
+                   placeholder="Customer Location">
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" asp-for="@Model.ShortDescription"
+               placeholder="Short Description">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" asp-for="@Model.Description" placeholder="Description"></textarea>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <input type="text" class="form-control" asp-for="@Model.OrderDate"
+                   placeholder="Order Date (yyyy/MM/dd)">
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" asp-for="@Model.FinishDate"
+                   placeholder="Finish Date (yyyy/MM/dd)">
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" asp-for="@Model.CategoryId" asp-items="@ViewData["Categories"] as SelectList"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="file" class="form-control" asp-for="@Model.Thumbnail" accept=".jpg, .png, .jpeg, .webp">
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox small">
+            <input type="checkbox" class="custom-control-input" asp-for="@Model.IsFinished">
+            <label class="custom-control-label" asp-for="@Model.IsFinished">
+                Is Finished
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success btn-user btn-block">
+        Add Project
+    </button>
+</form>

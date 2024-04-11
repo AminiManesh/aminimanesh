@@ -1,0 +1,14 @@
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net7.0\Aminimanesh.DataLayer.deps.json
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net7.0\Aminimanesh.DataLayer.runtimeconfig.json
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net7.0\Aminimanesh.DataLayer.dll
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net7.0\Aminimanesh.DataLayer.pdb
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.csproj.AssemblyReference.cache
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.AssemblyInfoInputs.cache
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.AssemblyInfo.cs
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.csproj.CoreCompileInputs.cache
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.dll
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\refint\Aminimanesh.DataLayer.dll
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.pdb
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\Aminimanesh.DataLayer.genruntimeconfig.cache
+G:\Program Files (x86)\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net7.0\ref\Aminimanesh.DataLayer.dll

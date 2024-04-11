@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Aminimanesh.Web
+build_property.RootNamespace = Aminimanesh.Web
+build_property.ProjectDir = G:\Program Files (x86)\Aminimanesh\Aminimanesh.Web\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\Program Files (x86)\Aminimanesh\Aminimanesh.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Main/CategoriesComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNYWluXENhdGVnb3JpZXNDb21wb25lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Main/ContactInformationsComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNYWluXENvbnRhY3RJbmZvcm1hdGlvbnNDb21wb25lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Main/HistoryLinesComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNYWluXEhpc3RvcnlMaW5lc0NvbXBvbmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Main/ProjectsComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNYWluXFByb2plY3RzQ29tcG9uZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Main/ServicesComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNYWluXFNlcnZpY2VzQ29tcG9uZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Main/WorkStatsComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNYWluXFdvcmtTdGF0c0NvbXBvbmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Sidebar/FooterSocialsComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTaWRlYmFyXEZvb3RlclNvY2lhbHNDb21wb25lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Sidebar/LanguagesComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTaWRlYmFyXExhbmd1YWdlc0NvbXBvbmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Sidebar/MiniSkillsComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTaWRlYmFyXE1pbmlTa2lsbHNDb21wb25lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Sidebar/ProfileComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTaWRlYmFyXFByb2ZpbGVDb21wb25lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Components/Sidebar/SkillsComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTaWRlYmFyXFNraWxsc0NvbXBvbmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Error/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3JQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Home/Project.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/EmailMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVtYWlsTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_ImageModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbWFnZU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_Styles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHlsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/Program Files (x86)/Aminimanesh/Aminimanesh.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

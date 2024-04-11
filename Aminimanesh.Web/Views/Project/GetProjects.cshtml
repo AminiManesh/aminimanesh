@@ -1,0 +1,34 @@
+﻿@using Aminimanesh.Core.DTOs.ProjectDTOs
+@model List<ProjectListItemDTO>
+
+@if(Model != null && Model.Any())
+{
+    @foreach (var proj in Model)
+    {
+        <!-- work -->
+        <div class="col col-12 col-md-6 col-xl-4">
+            <article class="work">
+                <a href="#" class="open-image">
+                    <span class="expander">
+                        <i class="bi bi-fullscreen"></i>
+                    </span>
+                    <img class="img-fluid" src="/img/@(proj.Title.ToLower())/@proj.Thumbnail" alt="امینی منش - نمونه کار @proj.MiniDescription">
+                </a>
+                <div class="work-body">
+                    <h5 class="mini-header">@proj.Title</h5>
+                    <p class="description">@proj.MiniDescription</p>
+                    <a class="read-more-link primary-link" href="/Project/@proj.ProjectId/@proj.Title">
+                        اطلاعات بیشتر
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    }
+}
+else
+{
+    <div class="alert alert-info" data-bs-theme="dark">
+        در حال حاضر نمونه‌کار با این دسته بندی وجود ندارد.
+    </div>
+}

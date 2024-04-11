@@ -1,0 +1,10 @@
+﻿@using Aminimanesh.Core.DTOs.SocialDTOs
+@model List<SocialListItemDTO>
+
+<div>
+    @foreach (var social in Model)
+    {
+        <!-- social -->
+        <a href="@social.LinkAddress"><i class="bi bi-@social.Icon"></i></a>
+    }
+</div>

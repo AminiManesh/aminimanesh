@@ -1,0 +1,16 @@
+﻿@using Aminimanesh.Core.DTOs.SkillDTOs
+@model List<SkillListItemDTO>
+
+@foreach (var skill in Model)
+{
+    <!-- skill -->
+    <div class="sidebar-skill">
+        <div class="text">
+            <p dir="ltr">@skill.Title</p>
+            <span>@skill.Value%</span>
+        </div>
+        <div class="skill-bar" aria-valuenow="@skill.Value.Value">
+            <div></div>
+        </div>
+    </div>
+}

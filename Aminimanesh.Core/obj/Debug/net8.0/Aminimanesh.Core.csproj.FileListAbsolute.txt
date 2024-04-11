@@ -1,0 +1,30 @@
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.Core.deps.json
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.Core.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.Core.pdb
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.DataLayer.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.DataLayer.pdb
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.csproj.AssemblyReference.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.AssemblyInfoInputs.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.AssemblyInfo.cs
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.csproj.CoreCompileInputs.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.csproj.CopyComplete
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\refint\Aminimanesh.Core.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.pdb
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\ref\Aminimanesh.Core.dll
+F:\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.Core.deps.json
+F:\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.Core.dll
+F:\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.Core.pdb
+F:\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.DataLayer.dll
+F:\Aminimanesh\Aminimanesh.Core\bin\Debug\net8.0\Aminimanesh.DataLayer.pdb
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.csproj.AssemblyReference.cache
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.AssemblyInfoInputs.cache
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.AssemblyInfo.cs
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.csproj.CoreCompileInputs.cache
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.csproj.CopyComplete
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.dll
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\refint\Aminimanesh.Core.dll
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\Aminimanesh.Core.pdb
+F:\Aminimanesh\Aminimanesh.Core\obj\Debug\net8.0\ref\Aminimanesh.Core.dll

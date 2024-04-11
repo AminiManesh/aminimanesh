@@ -1,0 +1,112 @@
+﻿@using Aminimanesh.Core.Convertors
+@using Aminimanesh.Core.DTOs.ProjectDTOs
+@model ProjectGeneralDTO
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/details.css">
+    <link rel="stylesheet" href="~/css/details-media.css">
+}
+
+<div class="heading">
+    <h2 class="medium-header">@Model.MiniDescription</h2>
+    <span class="inset-box">@Model.Category.Title</span>
+</div>
+
+<!-- gallery section -->
+<section class="gallery">
+    <!-- gallery carousel/slider/swiper -->
+    <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
+                @foreach (var image in Model.Attachments)
+                {
+                    <div class="owl-item">
+                        <a href="#" class="open-image">
+                            <span class="expander">
+                                <i class="bi bi-fullscreen"></i>
+                            </span>
+                            <img src="/img/@Model.Title.ToLower()/@image.FileName" alt="امینی منش - @Model.MiniDescription">
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- project details and descriptions section -->
+<section class="proj-details">
+    <h4 class="main-section-heading">جزئیات پروژه</h4>
+    <div class="row g-4">
+        <!-- project description -->
+        <div class="col col-12 col-md-8 col-xxl-9">
+            <div class="description-box">
+                <h5 class="mini-header">توضیحات</h5>
+                <p class="description">
+                    @Model.Description
+                </p>
+                <a class="read-more-link primary-link" href="#">
+                    <i class="bi bi-chevron-left"></i>
+                    مشاهده پروژه
+                </a>
+            </div>
+        </div>
+        <!-- project details -->
+        <div class="col col-12 col-md-4 col-xxl-3">
+            <div class="details-box">
+                <div>
+                    <span class="primary-label">تاریخ سفارش:</span>
+                    <span class="secondary-label">@Model.OrderDate.ToShamsi()</span>
+                </div>
+                <div>
+                    <span class="primary-label">تاریخ اتمام:</span>
+                    <span class="secondary-label">@Model.FinishDate.ToShamsi()</span>
+                </div>
+                <div>
+                    <span class="primary-label">وضعیت:</span>
+                    <span class="secondary-label">
+                        @if (Model.IsFinished)
+                        {
+                            <span>تکمیل شده</span>
+                        }
+                        else
+                        {
+                            <span>در حال تکمیل</span>
+                        }
+                    </span>
+                </div>
+                <div>
+                    <span class="primary-label">مشتری:</span>
+                    <span class="secondary-label">@Model.CustomerName</span>
+                </div>
+                <div>
+                    <span class="primary-label">لوکشین:</span>
+                    <span class="secondary-label">@Model.CustomerLocation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- landing -->
+<section class="landing" id="landing">
+    <section class="work-stats">
+        @await Component.InvokeAsync("ExperienceInfoComponent")
+    </section>
+    <section class="discover row">
+        <div class="col col-12">
+            <h2>آماده‌ای که سایت خودت رو داشته باشی؟</h2>
+            <p class="code" dir="ltr">
+                &lt;<span class="highlight">code</span>&gt;
+                <span class="text-pointer"></span>
+                <span class="speech" dir="rtl"></span>
+                &lt;/<span class="highlight">code</span>&gt;
+            </p>
+            <a href="/#contact" class="big-button portfolio-button">تماس با من</a>
+        </div>
+    </section>
+</section>

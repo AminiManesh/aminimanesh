@@ -1,0 +1,14 @@
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.deps.json
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.runtimeconfig.json
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.pdb
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.csproj.AssemblyReference.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.AssemblyInfoInputs.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.AssemblyInfo.cs
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.csproj.CoreCompileInputs.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\refint\Aminimanesh.DataLayer.dll
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.pdb
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.genruntimeconfig.cache
+C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\ref\Aminimanesh.DataLayer.dll

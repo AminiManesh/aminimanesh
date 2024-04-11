@@ -1,0 +1,10 @@
+﻿@using Aminimanesh.Core.DTOs.CategoryDTOs
+@model List<CategoryListItemDTO>
+
+<ul>
+    <li><a href="#0" class="secondary-link" onclick="getProjects()">همه نمونه کارها (@Model.Sum(c => c.ProjectsCount))</a></li>
+    @foreach (var category in Model)
+    {
+        <li><a href="#0" class="secondary-link" onclick="getProjects(@category.CategoryId)">@category.Title (@category.ProjectsCount)</a></li>
+    }
+</ul>
