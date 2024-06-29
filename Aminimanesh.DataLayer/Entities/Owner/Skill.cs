@@ -26,6 +26,9 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Display(Name = "درصد تسلط")]
         public int? Value { get; set; }
 
+        [Display(Name = "اولویت")]
+        public int? Priority { get; set; }
+
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public bool IsSideSkill { get; set; }
     }

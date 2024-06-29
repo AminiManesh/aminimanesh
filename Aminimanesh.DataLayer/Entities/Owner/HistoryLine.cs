@@ -22,8 +22,12 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Title { get; set; }
 
+        [Required]
+        public bool IsDeleted { get; set; }
+
+
         #region Relations
-        public List<History> Histories { get; set; }
+        public ICollection<History> Histories { get; set; } = new List<History>();
         #endregion
     }
 }

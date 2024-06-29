@@ -9,6 +9,8 @@ namespace Aminimanesh.Core.DTOs.LanguageDTOs
 {
     public class LanguageListItemDTO
     {
+        public int LanguageId { get; set; }
+
         public string Title { get; set; }
 
         public int Value { get; set; }

@@ -24,8 +24,13 @@ namespace Aminimanesh.DataLayer.Entities.Owner
 
         [Display(Name = "عنوان پروژه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
+        [MaxLength(100, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Title { get; set; }
+
+        [Display(Name = " عنوان پروژه برای Url")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        [MaxLength(200, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
+        public string UrlTitle { get; set; }
 
         [Display(Name = "توضیحات پروژه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
@@ -42,10 +47,10 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         public string Thumbnail { get; set; }
 
         [Display(Name = "تاریخ شروع پروژه")]
-        public DateTime OrderDate { get; set; }
+        public string OrderDate { get; set; }
 
         [Display(Name = "تاریخ اتمام")]
-        public DateTime FinishDate { get; set; }
+        public string FinishDate { get; set; }
 
         [Display(Name = "وضعیت پروژه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]

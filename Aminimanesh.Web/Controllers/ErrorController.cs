@@ -2,22 +2,14 @@
 
 namespace Aminimanesh.Web.Controllers
 {
+    [Route("[controller]")]
     public class ErrorController : Controller
     {
-        [Route("ErrorPage/{statusCode?}")]
-        public IActionResult ErrorPage(int? statusCode)
+        [HttpGet("{statusCode}")]
+        public IActionResult Error(int statusCode)
         {
-            switch (statusCode)
-            {
-                case 404:
-                    ViewData["Code"] = statusCode;
-                    ViewData["Message"] = "صفحه مورد نظر پیدا نشد";
-                    break;
-                default:
-                    break;
-            }
-
-            return View();
+            Response.StatusCode = statusCode;
+            return View(statusCode);
         }
     }
 }

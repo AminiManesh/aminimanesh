@@ -1,35 +1,41 @@
 ﻿<aside class="sidebar">
-
     <!-- The avatar and main skills section -->
     <section class="profile">
         <span class="open-sidebar">
             <i class="bi bi-three-dots-vertical"></i>
         </span>
-        @await Component.InvokeAsync("ProfileInfoComponent")
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("ProfileInfoComponent")
+        </cache>
     </section>
-
     <section class="sidebar-body">
         <!-- Address section -->
-        @await Component.InvokeAsync("CommonInfoComponent")
-
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("CommonInfoComponent")
+        </cache>
         <!-- The languages section -->
         <section class="languages sidebar-section">
-            @await Component.InvokeAsync("LanguagesComponent")
+            <cache expires-after="@TimeSpan.FromHours(1)">
+                @await Component.InvokeAsync("LanguagesComponent")
+            </cache>
         </section>
-
         <!-- Sidebar main skills are there -->
         <section class="sidebar-skills sidebar-section">
-            @await Component.InvokeAsync("SkillsComponent")
+            <cache expires-after="@TimeSpan.FromHours(1)">
+                @await Component.InvokeAsync("SkillsComponent")
+            </cache>
         </section>
-
         <!-- Sidebar mini skills -->
         <section class="mini-skills sidebar-section">
-            @await Component.InvokeAsync("SideSkillsComponent")
+            <cache expires-after="@TimeSpan.FromHours(1)">
+                @await Component.InvokeAsync("SideSkillsComponent")
+            </cache>
         </section>
     </section>
-
     <!-- socials -->
     <footer>
-        @await Component.InvokeAsync("SocialsComponent")
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("SocialsComponent")
+        </cache>
     </footer>
 </aside>

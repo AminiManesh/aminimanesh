@@ -7,14 +7,13 @@
         <span class="availability">من برای همکاری و گرفتن پروژه آماده ام !</span>
     </span>
 </div>
-<a asp-controller="Home" asp-action="Index" asp-area="">
-    <h1 class="fullname">@Model.FullName</h1>
+<a asp-controller="Home" asp-action="Index" title="امینی منش - برنامه نویس بک اند و فرانت اند و طراح وبسایت">
+    <h2 class="fullname">@Model.FullName</h2>
 </a>
 <p class="main-job">@Model.FirstJob</p>
 <p class="secondry-job">@Model.SecondJob</p>
-
 <!-- CV download link -->
-<a class="big-button download-cv" asp-asp-controller="Owner" asp-action="DownloadCV">
+<a class="big-button download-cv" asp-controller="Owner" asp-action="DownloadCV" title="رزومه امینی منش - برنامه نویس بک اند و فرانت اند وبسایت">
     <i class="bi bi-download"></i>
     دانلود رزومه‌ی من
 </a>

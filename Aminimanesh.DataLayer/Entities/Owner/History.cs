@@ -50,17 +50,15 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         public bool Finished { get; set; }
 
         [Display(Name = "متن لینک")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string LinkAddress { get; set; }
+        public string? LinkAddress { get; set; }
 
         [Display(Name = "مسیر لینک")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        public string LinkLabel { get; set; }
+        public string? LinkLabel { get; set; }
 
 
         #region Relations
-        public HistoryLine HistoryLine { get; set; }
+        public virtual HistoryLine? HistoryLine { get; set; }
         #endregion
     }
 }

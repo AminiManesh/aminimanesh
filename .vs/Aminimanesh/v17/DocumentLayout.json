@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|c:\\programmingfiles\\asp.net core projects\\aminimanesh\\aminimanesh.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|solutionrelative:aminimanesh.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|c:\\programmingfiles\\asp.net core projects\\aminimanesh\\aminimanesh.web\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|solutionrelative:aminimanesh.web\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|c:\\programmingfiles\\asp.net core projects\\aminimanesh\\aminimanesh.web\\areas\\admin\\views\\project\\createproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|solutionrelative:aminimanesh.web\\areas\\admin\\views\\project\\createproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|c:\\programmingfiles\\asp.net core projects\\aminimanesh\\aminimanesh.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|solutionrelative:aminimanesh.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|c:\\programmingfiles\\asp.net core projects\\aminimanesh\\aminimanesh.web\\views\\project\\showproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{80EDD48D-DA60-4D4F-95FC-9DD322153D69}|Aminimanesh.Web\\Aminimanesh.Web.csproj|solutionrelative:aminimanesh.web\\views\\project\\showproject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 455,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Aminimanesh.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Aminimanesh.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T19:39:43.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "RelativeDocumentMoniker": "Aminimanesh.Web\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "ToolTip": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "RelativeToolTip": "Aminimanesh.Web\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T07:29:05.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateProject.cshtml",
+              "DocumentMoniker": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Areas\\Admin\\Views\\Project\\CreateProject.cshtml",
+              "RelativeDocumentMoniker": "Aminimanesh.Web\\Areas\\Admin\\Views\\Project\\CreateProject.cshtml",
+              "ToolTip": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Areas\\Admin\\Views\\Project\\CreateProject.cshtml",
+              "RelativeToolTip": "Aminimanesh.Web\\Areas\\Admin\\Views\\Project\\CreateProject.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFsAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T18:08:02.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Aminimanesh.Web\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Aminimanesh.Web\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAAGgFAAAAAAAAAAAEwIEFAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-14T18:03:58.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShowProject.cshtml",
+              "DocumentMoniker": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Views\\Project\\ShowProject.cshtml",
+              "RelativeDocumentMoniker": "Aminimanesh.Web\\Views\\Project\\ShowProject.cshtml",
+              "ToolTip": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Views\\Project\\ShowProject.cshtml",
+              "RelativeToolTip": "Aminimanesh.Web\\Views\\Project\\ShowProject.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T09:48:50.64Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

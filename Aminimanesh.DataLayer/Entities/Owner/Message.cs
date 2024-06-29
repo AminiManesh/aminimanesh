@@ -12,8 +12,6 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Key]
         public int MessageId { get; set; }
 
-        public int? ServiceId { get; set; }
-
         [Display(Name = "نام")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         [MaxLength(100, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
@@ -30,9 +28,7 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [MaxLength]
         public string Content { get; set; }
 
-
-        #region Relations
-        public virtual Service Service { get; set; }
-        #endregion
+        [Display(Name = "تاریخ ارسال")]
+        public DateTime? SendDate { get; set; }
     }
 }

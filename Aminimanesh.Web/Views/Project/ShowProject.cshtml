@@ -1,0 +1,142 @@
+﻿@using Aminimanesh.Core.Convertors
+@using Aminimanesh.Core.DTOs.ProjectDTOs
+@model ProjectGeneralDTO
+@{
+    ViewData["Title"] = Model.Title;
+    string url = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}";
+    string text = $"{Model.Title} - {Model.ShortDescription}";
+    string title = Model.Title;
+    string encodedUrl = Uri.EscapeDataString(url);
+    string encodedText = Uri.EscapeDataString(text);
+    string telegramShareLink = $"https://t.me/share/url?url={url}&text={text}";
+    string twitterShareLink = $"twitter://post?message={text}&url={url}";
+    string redditShareLink = $"http://www.reddit.com/submit?url={url}&title={text}";
+    string linkedinShareLink = $"https://www.linkedin.com/shareArticle?url={url}&title={title}&summary={text}&source={Context.Request.Host}&mini=true";
+    string facebookShareLink = $"https://www.facebook.com/sharer/sharer.php?u={url}";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/details.css">
+    <link rel="stylesheet" href="~/css/details-media.css">
+}
+
+<div class="heading">
+    <h1 class="medium-header"><a title="@Model.Title">@Model.Title</a></h1>
+    <span class="inset-box">@Model.Category.Title</span>
+</div>
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M5.5 0L7 1.5 4.5 4 7 6.5 5.5 8l-4-4 4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a asp-controller="Home" asp-action="Index" class="primary-link" title="صفحه اصلی - @Context.Request.Host">صفحه اصلی</a></li>
+        <li class="breadcrumb-item active"><a asp-controller="Home" asp-action="Index" asp-fragment="portfolio" class="primary-link" title="نمونه کار های برنامه نویسی و طراحی سایت">نمونه کار‌ها</a></li>
+        <li class="breadcrumb-item active"><a href="#" class="primary-link" title="نمونه کار های برنامه نویسی وبسایت @Model.Category.Title">@Model.Category.Title</a></li>
+        <li class="breadcrumb-item" aria-current="page">@Model.Title</li>
+    </ol>
+</nav>
+
+<!-- gallery section -->
+<section class="gallery">
+    <!-- gallery carousel/slider/swiper -->
+    <div class="owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+            <div class="owl-stage">
+                @foreach (var image in Model.Attachments.Where(a => a.IsImage))
+                {
+                    <div class="owl-item">
+                        <a href="#" title="@Model.Title - @image.ShortDescription" data-fancybox="gallery-@image.ProjectId" data-caption="@image.ShortDescription" data-src="/owner/projects/@image.ProjectId/attachments/@image.FileName" class="open-image">
+                            <span class="expander"><i class="bi bi-fullscreen"></i></span>
+                            <img src="/owner/projects/@image.ProjectId/attachments/thumbnails/@image.FileName" alt="امینی منش - @Model.ShortDescription">
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<!-- project details and descriptions section -->
+<section class="proj-details">
+    <h4 class="main-section-heading">جزئیات پروژه</h4>
+    <div class="row g-4">
+        <!-- project description -->
+        <div class="col col-12 col-md-8 col-xxl-9">
+            <div class="description-box">
+                <h5 class="mini-header">توضیحات</h5>
+                <p class="description closed">@Model.Description</p>
+                <button class="big-button portfolio-button d-block mx-auto rounded-5 p-1 px-3 mb-1" onclick="toggleDes(this)" id="showMore">مشاهده بیشتر</button>
+                <a title="مشاهده @Model.Title - @Model.Category.Title" class="read-more-link primary-link" href="#"><i class="bi bi-chevron-left"></i>مشاهده پروژه</a>
+            </div>
+        </div>
+        <!-- project details -->
+        <div class="col col-12 col-md-4 col-xxl-3">
+            <div class="details-box mb-4">
+                <div>
+                    <span class="primary-label">تاریخ سفارش:</span>
+                    <span class="secondary-label">@Model.OrderDate</span>
+                </div>
+                <div>
+                    <span class="primary-label">تاریخ اتمام:</span>
+                    <span class="secondary-label">@Model.FinishDate</span>
+                </div>
+                <div>
+                    <span class="primary-label">وضعیت:</span>
+                    <span class="secondary-label">
+                        @if (Model.IsFinished)
+                        {
+                            <span>تکمیل شده</span>
+                        }
+                        else
+                        {
+                            <span>در حال تکمیل</span>
+                        }
+                    </span>
+                </div>
+                <div>
+                    <span class="primary-label">مشتری:</span>
+                    <span class="secondary-label">@Model.CustomerName</span>
+                </div>
+                <div>
+                    <span class="primary-label">لوکشین:</span>
+                    <span class="secondary-label">@Model.CustomerLocation</span>
+                </div>
+            </div>
+            <div class="details-box share-box p-4">
+                <h3 class="box-heading">به اشتراک گذاری</h3>
+                <div class="row row-cols-3 row-cols-sm-4 row-cols-lg-3 g-4 justify-content-center">
+                    <div class="col">
+                        <a class="share-link primary-link" href="@redditShareLink" title="اشتراک گذاری @Model.Title در Reddit"><i class="bi bi-reddit"></i></a>
+                    </div>
+                     <div class="col">
+                        <a class="share-link primary-link" href="@telegramShareLink" title="اشتراک گذاری @Model.Title در Telegram"><i class="bi bi-telegram"></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="share-link primary-link" href="@twitterShareLink" title="اشتراک گذاری @Model.Title در Twitter - X"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="share-link primary-link" href="@linkedinShareLink" title="اشتراک گذاری @Model.Title در LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="share-link primary-link" href="@facebookShareLink" title="اشتراک گذاری @Model.Title در Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- landing -->
+<section class="landing" id="landing">
+    <section class="work-stats">
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("ExperienceInfoComponent")
+        </cache>
+    </section>
+    <section class="discover row">
+        <div class="col col-12">
+            <h2>آماده‌ای که سایت خودت رو داشته باشی؟</h2>
+            <p class="code" dir="ltr">
+                &lt;<span class="highlight">code</span>&gt;
+                <span class="text-pointer"></span>
+                <span class="speech" dir="rtl"></span>
+                &lt;/<span class="highlight">code</span>&gt;
+            </p>
+            <a href="/#contact" class="big-button portfolio-button" title="تماس با محمد امین امینی منش - طراح و برنامه نویس بک‌اند و وبسایت">تماس با من</a>
+        </div>
+    </section>
+</section>

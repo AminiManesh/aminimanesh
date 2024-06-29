@@ -26,9 +26,5 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Display(Name = "توضیحات سرویس")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string Description { get; set; }
-
-        #region Relations
-        public virtual ICollection<Message> Messages { get; set; }
-        #endregion
     }
 }

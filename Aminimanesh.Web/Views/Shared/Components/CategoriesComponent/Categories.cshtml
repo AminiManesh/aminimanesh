@@ -1,10 +1,10 @@
 ﻿@using Aminimanesh.Core.DTOs.CategoryDTOs
-@model List<CategoryListItemDTO>
+@model Tuple<List<CategoryListItemDTO>, int>
 
 <ul>
-    <li><a href="#0" class="secondary-link" onclick="getProjects()">همه نمونه کارها (@Model.Sum(c => c.ProjectsCount))</a></li>
-    @foreach (var category in Model)
+    <li><a href="#0" class="secondary-link" onclick="getProjects()">همه نمونه کارها (@Model.Item2)</a></li>
+    @foreach (var category in Model.Item1)
     {
-        <li><a href="#0" class="secondary-link" onclick="getProjects(@category.CategoryId)">@category.Title (@category.ProjectsCount)</a></li>
+        <li><a href="#0" class="secondary-link" onclick="getProjects(@category.CategoryId)" title="@category.Title">@category.Title (@category.ProjectsCount)</a></li>
     }
 </ul>

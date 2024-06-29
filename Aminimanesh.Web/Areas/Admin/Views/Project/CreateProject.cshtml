@@ -4,56 +4,110 @@
     ViewData["Title"] = "Add Project";
 }
 
-<div class="text-center">
-    <h1 class="h4 text-gray-900 mb-4">Create a Project!</h1>
+@section Styles {
+    <style>
+        .ck-editor__editable[role="textbox"] {
+            /* Editing area */
+            min-height: 500px;
+        }
+    </style>
+}
+
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">@ViewData["Title"]</h1>
+<p class="mb-4">
+   Add a project to your resume.
+</p>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3 bg-info">
+        <h6 class="m-0 font-weight-bold text-white">Project Information</h6>
+    </div>
+    <div class="card-body">
+        <form class="user" action="/create-project" method="post" enctype="multipart/form-data">
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger" data-bs-theme="dark" asp-validation-summary="All"></div>
+            }
+
+            <div class="form-group row">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <input type="text" class="form-control" asp-for="@Model.Title"
+                           placeholder="Project Title">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" asp-for="@Model.CustomerName"
+                           placeholder="Customer Name">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" asp-for="@Model.CustomerLocation"
+                           placeholder="Customer Location">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" asp-for="@Model.ShortDescription"
+                       placeholder="Short Description">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" asp-for="@Model.Description" placeholder="Description"></textarea>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <input type="text" class="form-control" asp-for="@Model.OrderDate"
+                           placeholder="Order Date (yyyy/MM/dd)">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" asp-for="@Model.FinishDate"
+                           placeholder="Finish Date (yyyy/MM/dd)">
+                </div>
+                <div class="col-sm-4">
+                    <select class="form-control" asp-for="@Model.CategoryId" asp-items="@ViewData["Categories"] as SelectList"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Thumbnail" class="form-label d-block w-100">
+                    Thumbnail
+                    <input type="file" class="form-control" asp-for="@Model.Thumbnail" accept=".jpg, .png, .jpeg, .webp">
+                </label>
+                <img src="" class="img-thumbnail d-block mt-2 mx-auto" width="600" id="thumbnailPreview" />
+            </div>
+            <div class="form-group">
+                <div class="custom-control custom-checkbox small">
+                    <input type="checkbox" class="custom-control-input" asp-for="@Model.IsFinished">
+                    <label class="custom-control-label" asp-for="@Model.IsFinished">
+                        Is Finished
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success btn-user btn-block">
+                Add Project
+            </button>
+        </form>
+    </div>
 </div>
-<form class="user" asp-area="Admin" asp-controller="Project" asp-action="CreatePost" method="post" enctype="multipart/form-data">
-    <div class="form-group row">
-        <div class="col-sm-4 mb-3 mb-sm-0">
-            <input type="text" class="form-control" asp-for="@Model.Title"
-                   placeholder="Project Title">
-        </div>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" asp-for="@Model.CustomerName"
-                   placeholder="Customer Name">
-        </div>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" asp-for="@Model.CustomerLocation"
-                   placeholder="Customer Location">
-        </div>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" asp-for="@Model.ShortDescription"
-               placeholder="Short Description">
-    </div>
-    <div class="form-group">
-        <textarea class="form-control" asp-for="@Model.Description" placeholder="Description"></textarea>
-    </div>
-    <div class="form-group row">
-        <div class="col-sm-4 mb-3 mb-sm-0">
-            <input type="text" class="form-control" asp-for="@Model.OrderDate"
-                   placeholder="Order Date (yyyy/MM/dd)">
-        </div>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" asp-for="@Model.FinishDate"
-                   placeholder="Finish Date (yyyy/MM/dd)">
-        </div>
-        <div class="col-sm-4">
-            <select class="form-control" asp-for="@Model.CategoryId" asp-items="@ViewData["Categories"] as SelectList"></select>
-        </div>
-    </div>
-    <div class="form-group">
-        <input type="file" class="form-control" asp-for="@Model.Thumbnail" accept=".jpg, .png, .jpeg, .webp">
-    </div>
-    <div class="form-group">
-        <div class="custom-control custom-checkbox small">
-            <input type="checkbox" class="custom-control-input" asp-for="@Model.IsFinished">
-            <label class="custom-control-label" asp-for="@Model.IsFinished">
-                Is Finished
-            </label>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-success btn-user btn-block">
-        Add Project
-    </button>
-</form>
+
+
+@section Scripts {
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.0/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Description'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        Thumbnail.onchange = evt => {
+            const [file] = Thumbnail.files
+            if (file) {
+                thumbnailPreview.src = URL.createObjectURL(file);
+            } else {
+                thumbnailPreview.src = "";
+            }
+        }
+    </script>
+}

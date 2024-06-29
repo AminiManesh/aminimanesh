@@ -18,12 +18,14 @@
 
     <!-- Custom styles for this template-->
     <link href="/admin/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/lib/sweetalert2/sweetalert2.min.css">
+    @RenderSection("Styles", false)
 
 </head>
 
 <body id="page-top">
-    
+
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -37,9 +39,8 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <partial name="_Topbar"/>
+                <partial name="_Topbar" />
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
@@ -54,7 +55,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website <script>document.write(new Date().getFullYear());</script></span>
                     </div>
                 </div>
             </footer>
@@ -84,11 +85,18 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-danger" href="/Logout">Logout</a>
                 </div>
             </div>
         </div>
     </div>
+
+    @RenderSection("Modals", false)
+
+
+    <script src="/lib/jquery/jquery-1.10.2.min.js"></script>
+    <script src="/lib/dropzone/dropzone.min.js"></script>
+    <script src="/lib/onyx/js/onyx.js"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="/admin/vendor/jquery/jquery.min.js"></script>
@@ -99,13 +107,8 @@
 
     <!-- Custom scripts for all pages-->
     <script src="/admin/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="/admin/vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="/admin/js/demo/chart-area-demo.js"></script>
-    <script src="/admin/js/demo/chart-pie-demo.js"></script>
+    <script src="/lib/sweetalert2/sweetalert2.min.js"></script>
+    @RenderSection("Scripts", false)
 
 </body>
 

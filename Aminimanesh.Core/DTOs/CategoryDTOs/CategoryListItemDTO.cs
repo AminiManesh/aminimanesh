@@ -13,6 +13,8 @@ namespace Aminimanesh.Core.DTOs.CategoryDTOs
 
         public string Title { get; set; }
 
+        public string UrlTitle { get; set; }
+
         public int ProjectsCount { get; set; }
     }
 }

@@ -35,11 +35,12 @@ namespace Aminimanesh.DataLayer.Entities.Owner
 
         [Display(Name = "نمایه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(100, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
+        [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Avatar { get; set; }
 
         [Display(Name = "فایل رزومه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string CVFile { get; set; }
 
         [Display(Name = "کشور")]
@@ -59,7 +60,7 @@ namespace Aminimanesh.DataLayer.Entities.Owner
 
         [Display(Name = "سن")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        public string Age { get; set; }
+        public int Age { get; set; }
 
         [Display(Name = "ایمیل دریافت پیام‌ها")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
@@ -103,10 +104,10 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Whatsapp { get; set; }
 
-        [Display(Name = "ایتا")]
+        [Display(Name = "اینستاگرام")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string Eitaa { get; set; }
+        public string Instagram { get; set; }
 
         [Display(Name = "تلفن همراه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
@@ -118,34 +119,5 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Mobile2 { get; set; }
         #endregion
-
-        #region Socials
-        [Display(Name = "لینک تلگرام")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(150, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string TelegramLink { get; set; }
-
-        [Display(Name = "لینک لینکدین")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(150, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string LinkedInLink { get; set; }
-
-        [Display(Name = "لینک گیت‌هاب")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(150, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string GithubLink { get; set; }
-
-        [Display(Name = "لینک ایمیل")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(150, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string EmailLink { get; set; }
-
-        [Display(Name = "لینک توییتر")]
-        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(150, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
-        public string TwitterLink { get; set; }
-        #endregion
-
-
     }
 }

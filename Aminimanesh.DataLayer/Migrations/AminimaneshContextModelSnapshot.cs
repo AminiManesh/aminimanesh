@@ -30,15 +30,9 @@ namespace Aminimanesh.DataLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AttachmentId"));
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.Property<string>("FileName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsImage")
                         .HasColumnType("bit");
@@ -79,6 +73,10 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("UrlTitle")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
@@ -113,12 +111,10 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("LinkAddress")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("LinkLabel")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StartTime")
@@ -145,6 +141,9 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HistoryLineId"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -189,6 +188,9 @@ namespace Aminimanesh.DataLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("SendDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SenderEmail")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -199,12 +201,7 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("ServiceId")
-                        .HasColumnType("int");
-
                     b.HasKey("MessageId");
-
-                    b.HasIndex("ServiceId");
 
                     b.ToTable("Messages");
                 });
@@ -217,14 +214,13 @@ namespace Aminimanesh.DataLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OwnerId"));
 
-                    b.Property<string>("Age")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
 
                     b.Property<string>("Avatar")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Awards")
                         .IsRequired()
@@ -232,7 +228,8 @@ namespace Aminimanesh.DataLayer.Migrations
 
                     b.Property<string>("CVFile")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -248,20 +245,10 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Eitaa")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("EmailLink")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("ExperienceYears")
                         .IsRequired()
@@ -277,20 +264,15 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("GithubLink")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
                     b.Property<string>("IncomeEmail")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<string>("LinkedInLink")
+                    b.Property<string>("Instagram")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Mobile")
                         .IsRequired()
@@ -320,16 +302,6 @@ namespace Aminimanesh.DataLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("TelegramLink")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<string>("TwitterLink")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
 
                     b.Property<string>("Whatsapp")
                         .IsRequired()
@@ -364,8 +336,9 @@ namespace Aminimanesh.DataLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FinishDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("FinishDate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -373,8 +346,9 @@ namespace Aminimanesh.DataLayer.Migrations
                     b.Property<bool>("IsFinished")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("OrderDate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ShortDescription")
                         .IsRequired()
@@ -388,8 +362,13 @@ namespace Aminimanesh.DataLayer.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("UrlTitle")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.HasKey("ProjectId");
 
@@ -430,6 +409,9 @@ namespace Aminimanesh.DataLayer.Migrations
 
                     b.Property<bool>("IsSideSkill")
                         .HasColumnType("bit");
+
+                    b.Property<int?>("Priority")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -541,15 +523,6 @@ namespace Aminimanesh.DataLayer.Migrations
                     b.Navigation("HistoryLine");
                 });
 
-            modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Message", b =>
-                {
-                    b.HasOne("Aminimanesh.DataLayer.Entities.Owner.Service", "Service")
-                        .WithMany("Messages")
-                        .HasForeignKey("ServiceId");
-
-                    b.Navigation("Service");
-                });
-
             modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Project", b =>
                 {
                     b.HasOne("Aminimanesh.DataLayer.Entities.Owner.Category", "Category")
@@ -574,11 +547,6 @@ namespace Aminimanesh.DataLayer.Migrations
             modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Project", b =>
                 {
                     b.Navigation("Attachments");
-                });
-
-            modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Service", b =>
-                {
-                    b.Navigation("Messages");
                 });
 #pragma warning restore 612, 618
         }

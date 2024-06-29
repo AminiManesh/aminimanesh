@@ -21,7 +21,7 @@ namespace Aminimanesh.Core.DTOs.OwnerDTOs
 
         public string Whatsapp { get; set; }
 
-        public string Eitaa { get; set; }
+        public string Instagram { get; set; }
 
         public string Mobile { get; set; }
 

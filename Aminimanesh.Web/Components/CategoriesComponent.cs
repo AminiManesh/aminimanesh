@@ -13,7 +13,7 @@ namespace Aminimanesh.Web.Components
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var model = await _projectService.GetAllCategoriesAsync();
+            var model = await _projectService.GetCategoriesForFilter();
             return View("Categories", model);
         }
     }

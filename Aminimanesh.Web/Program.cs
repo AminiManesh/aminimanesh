@@ -2,6 +2,7 @@ using Aminimanesh.Core.Profiles;
 using Aminimanesh.Core.Services;
 using Aminimanesh.Core.Services.Interfaces;
 using Aminimanesh.DataLayer.Context;
+using Aminimanesh.DataLayer.Entities.Owner;
 using ElectronicLearn.Core.Convertors;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http.Features;
@@ -10,7 +11,10 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
+builder.Services.AddResponseCaching();
 builder.Services.AddAutoMapper(typeof(CustomProfile), typeof(Program));
+
+// other service configurations...
 
 IConfigurationRoot configuration = new ConfigurationBuilder()
             .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
@@ -54,15 +58,15 @@ var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
 {
-    app.UseStatusCodePagesWithRedirects("/ErrorPage/{0}");
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/Error");
+    app.UseStatusCodePagesWithRedirects("/Error/{0}");
 }
 else
 {
     app.UseDeveloperExceptionPage();
 }
 
-
+app.UseResponseCaching();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
@@ -70,12 +74,15 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute
+    (
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+app.MapControllerRoute
+    (
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}"
+    );
 
 app.Run();

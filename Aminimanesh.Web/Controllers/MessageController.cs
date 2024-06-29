@@ -1,5 +1,5 @@
-﻿using Aminimanesh.Core.DTOs.MessageDTOs;
-using Aminimanesh.Core.Services.Interfaces;
+﻿using Aminimanesh.Core.Services.Interfaces;
+using Aminimanesh.DataLayer.Entities.Owner;
 using ElectronicLearn.Core.Convertors;
 using ElectronicLearn.Core.Senders;
 using Microsoft.AspNetCore.Mvc;
@@ -10,28 +10,30 @@ namespace Aminimanesh.Web.Controllers
     {
         private readonly IViewRenderService _renderView;
         private readonly IOwnerService _ownerService;
-        public MessageController(IViewRenderService renderView, IOwnerService ownerService)
+        private readonly IServiceService _serviceService;
+        public MessageController(IViewRenderService renderView, IOwnerService ownerService, IServiceService serviceService)
         {
             _renderView = renderView;
             _ownerService = ownerService;
+            _serviceService = serviceService;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public async Task<IActionResult> SendMessage(CreateMessageDTO message)
+        [HttpPost]
+        [Route("send-message")]
+        public async Task<IActionResult> SendMessage(Message message)
         {
             if (!ModelState.IsValid)
             {
                 return View(message);
             }
 
+            message.SendDate = DateTime.Now;
             var body = _renderView.RenderToStringAsync("EmailMessage", message);
             SendEmail.Send(await _ownerService.GetIncomeEmailAsync(), $"aminimanesh.ir | Message from {message.SenderEmail}", body);
 
-            return new JsonResult(new { success = true, message = "پیام شما با موفقیت ارسال شد!" });
+            await _serviceService.AddMessageAsync(message);
+
+            return new JsonResult(new { success = true, message = "پیام شما با موفقیت ارسال شد." });
         }
     }
 }

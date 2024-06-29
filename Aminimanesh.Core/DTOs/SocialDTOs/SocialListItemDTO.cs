@@ -9,6 +9,8 @@ namespace Aminimanesh.Core.DTOs.SocialDTOs
 {
     public class SocialListItemDTO
     {
+        public int SocialId { get; set; }
+
         public string Title { get; set; }
 
         public string LinkAddress { get; set; }

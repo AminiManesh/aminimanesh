@@ -12,7 +12,7 @@ namespace ElectronicLearn.Core.Senders
         {
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-            mail.From = new MailAddress("aztecgoodamin1@gmail.com", "الکترونیک لرن");
+            mail.From = new MailAddress("aztecgoodamin1@gmail.com", "امینی منش");
             mail.To.Add(to);
             mail.Subject = subject;
             mail.Body = body;

@@ -17,6 +17,8 @@ namespace Aminimanesh.Core.DTOs.AttachmentDTOs
 
         public string ShowName { get; set; }
 
+        public string ShortDescription { get; set; } = null!;
+
         public bool IsImage { get; set; }
     }
 }

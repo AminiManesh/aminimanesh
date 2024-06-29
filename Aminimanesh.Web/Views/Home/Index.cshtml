@@ -6,6 +6,7 @@
 <section class="landing" id="landing">
     <section class="discover row">
         <div class="col col-md-8 col-lg-12 col-xl-10 col-xxl-8">
+            <a href="https://localhost:44337/showpost/1">https://localhost:44337/showpost/1</a>
             <h2>با من بیشتر آشنا بشید! همین الان نمونه کارهام رو ببین.</h2>
             <p class="code" dir="ltr">
                 &lt;<span class="highlight">code</span>&gt;
@@ -13,30 +14,38 @@
                 <span class="speech" dir="rtl"></span>
                 &lt;/<span class="highlight">code</span>&gt;
             </p>
-            <a href="#portfolio" class="big-button portfolio-button">نمونه کار‌های من</a>
+            <a href="#portfolio" class="big-button portfolio-button" title="نمونه کار‌های من">نمونه کار‌های من</a>
         </div>
     </section>
     <section class="work-stats">
-        @await Component.InvokeAsync("ExperienceInfoComponent")
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("ExperienceInfoComponent")
+        </cache>
     </section>
 </section>
 
 <!-- services -->
 <section class="services" id="services">
-    @await Component.InvokeAsync("ServicesComponent")
+    <cache expires-after="@TimeSpan.FromHours(1)">
+        @await Component.InvokeAsync("ServicesComponent")
+    </cache>
 </section>
 
 <section class="portfolio" id="portfolio">
     <h4 class="main-section-heading">نمونه کارها</h4>
     <div class="portfolio-categories">
-        @await Component.InvokeAsync("CategoriesComponent")
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("CategoriesComponent")
+        </cache>
     </div>
     <div class="row g-4" id="projectsList">
     </div>
 </section>
 
 <section class="timelines" id="timelines">
-    @await Component.InvokeAsync("HistoryLinesComponent")
+        @await Component.InvokeAsync("HistoryLinesComponent")
+    <cache expires-after="@TimeSpan.FromHours(1)">
+    </cache>
 </section>
 
 <!-- contact section -->
@@ -45,13 +54,15 @@
     <!-- contact informations -->
     <section class="contact-infos">
         <h4 class="main-section-heading">اطلاعات تماس</h4>
-        @await Component.InvokeAsync("ContactInfoComponent")
+        <cache expires-after="@TimeSpan.FromHours(1)">
+            @await Component.InvokeAsync("ContactInfoComponent")
+        </cache>
     </section>
 
     <!-- send message form (get in touch) -->
     <section class="send-message">
         <h4 class="main-section-heading">در تماس باشید</h4>
-        @*  <form asp-action="Index" class="send-message-form">
+        <form method="post" class="send-message-form" id="messageForm">
 
             <div class="text-danger" asp-validation-summary="All"></div>
 
@@ -59,23 +70,23 @@
                 <label>
                     <i class="bi bi-person-fill"></i>
                 </label>
-                <input asp-for="@Model.MsgFullName" class="inputter" type="text" placeholder="نام و نام‌خانوادگی" />
+                <input name="fullName" id="fullName" class="inputter" type="text" placeholder="نام و نام‌خانوادگی" />
             </div>
             <div class="input-box">
                 <label>
                     <i class="bi bi-at"></i>
                 </label>
-                <input asp-for="@Model.MsgEmail" class="inputter" type="text" placeholder="ایمیل" />
+                <input name="email" id="email" class="inputter" type="text" placeholder="ایمیل" />
             </div>
             <div class="input-box">
                 <label>
                     <i class="bi bi-envelope-fill"></i>
                 </label>
-                <textarea asp-for="@Model.MsgMessage" class="inputter" rows="6" placeholder="متن پیام"></textarea>
+                <textarea name="content" id="content" class="inputter" rows="6" placeholder="متن پیام"></textarea>
             </div>
 
-            <button class="big-button">ارسال پیام</button>
-        </form> *@
+            <button type="submit" class="big-button" id="btnSendMessage">ارسال پیام</button>
+        </form>
     </section>
 </section>
 
@@ -83,11 +94,37 @@
     <partial name="_ValidationScriptsPartial" />
     <script>
 
-        function getProjects(categoryId) {
-            $("#projectsList").load('/project/GetProjects?categoryId=' + categoryId, function () {
-                workBody();
+        $(document).ready(function () {
+
+            $("#btnSendMessage").on('click', function (event) {
+                event.preventDefault();
+
+                var formData = {
+                    SenderName: $("#fullName").val(),
+                    SenderEmail: $("#email").val(),
+                    Content: $("#content").val()
+                };
+
+                $.ajax({
+                    type: 'post',
+                    url: '/send-message',
+                    data: formData,
+                    success: function (response) {
+                        if (response.success === true) {
+                            Swal.fire({
+                                title: "ارسال شد!",
+                                text: response.message,
+                                confirmButtonText: "باشه",
+                                icon: "success"
+                            });
+
+                            $("#messageForm")[0].reset();
+                        }
+                    }
+                });
             });
-        }
+
+        });
 
     </script>
 }

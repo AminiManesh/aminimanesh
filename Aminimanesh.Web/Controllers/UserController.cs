@@ -17,7 +17,7 @@ namespace Aminimanesh.Web.Controllers
         }
 
         [Route("Login")]
-        public async Task<IActionResult> Login()
+        public IActionResult Login()
         {
             if (User.Identity.IsAuthenticated)
             {

@@ -17,7 +17,7 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
 
         [Display(Name = "عنوان پروژه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(50, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
+        [MaxLength(100, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Title { get; set; }
 
         [Display(Name = "توضیحات پروژه")]
@@ -31,7 +31,6 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
 
         [Display(Name = "کاور پروژه")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        [MaxLength(200, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public IFormFile Thumbnail { get; set; }
 
         [Display(Name = "تاریخ شروع پروژه")]

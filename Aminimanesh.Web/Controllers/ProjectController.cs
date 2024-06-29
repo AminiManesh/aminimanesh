@@ -1,14 +1,20 @@
-﻿using Aminimanesh.Core.Services.Interfaces;
+﻿using Aminimanesh.Core.DTOs.ProjectDTOs;
+using Aminimanesh.Core.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace Aminimanesh.Web.Controllers
 {
     public class ProjectController : Controller
     {
+        private readonly IDistributedCache _cache;
         private readonly IProjectService _projectService;
-        public ProjectController(IProjectService projectService)
+        public ProjectController(IProjectService projectService, IDistributedCache distributedCache)
         {
             _projectService = projectService;
+            _cache = distributedCache;
         }
 
         public IActionResult Index()
@@ -16,10 +22,10 @@ namespace Aminimanesh.Web.Controllers
             return View();
         }
 
-        [Route("Project/{id}/{name}")]
-        public IActionResult Project(int id, string name)
+        [Route("projects/{category}/{name}")]
+        public async Task<IActionResult> ShowProject(string category, string name)
         {
-            var project = _projectService.GetProjectByIdAsync(id);
+            var project = await _projectService.GetProjectByNameAsync(name);
 
             if (project == null)
             {
@@ -31,9 +37,8 @@ namespace Aminimanesh.Web.Controllers
 
         public async Task<IActionResult> GetProjects(int categoryId)
         {
-            var project = await _projectService.GetProjectsAsync(categoryId);
-
-            return PartialView(project);
+            var projects = await _projectService.GetProjectsAsync(categoryId);
+            return PartialView(projects);
         }
     }
 }

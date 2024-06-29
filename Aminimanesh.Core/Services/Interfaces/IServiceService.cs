@@ -1,5 +1,6 @@
 ﻿using Aminimanesh.Core.DTOs.ServiceDTOs;
 using Aminimanesh.Core.DTOs.SpeechDTOs;
+using Aminimanesh.DataLayer.Entities.Owner;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,24 @@ namespace Aminimanesh.Core.Services.Interfaces
     public interface IServiceService
     {
         Task<List<ServiceListItemDTO>> GetAllServicesAsync();
+
+        #region Speech
         Task<List<SpeechListItemDTO>> GetAllSpeechsAsync();
+        Task<int> AddSpeechAsync(Speech speech);
+        Task<int> UpdateSpeechAsync(Speech speech);
+        Task<Speech> GetSpeechByIdAsync(int speechId);
+        Task RemoveSpeechbyIdAsync(int speechId);
+        #endregion
+
+        Task<int> AddServiceAsync(CreateServiceDTO serviceDTO);
+        Task<int> UpdateServiceAsync(EditServiceDTO serviceDTO);
+        Task<EditServiceDTO> GetServiceForEditAsync(int serviceId);
+        Task RemoveServiceByIdAsync(int serviceId);
+
+        #region Message
+        Task<List<Message>> GetAllMessages();
+        Task<List<Message>> GetNewMessages(int take);
+        Task<int> AddMessageAsync(Message message);
+        #endregion
     }
 }

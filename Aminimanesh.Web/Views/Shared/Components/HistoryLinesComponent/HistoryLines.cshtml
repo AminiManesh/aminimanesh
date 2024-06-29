@@ -1,7 +1,7 @@
 ﻿@using Aminimanesh.Core.DTOs.HistoryDTOs
 @model List<HistoryLineListItemDTO>
 
-<div class="row">
+<div class="row justify-content-center">
     @foreach (var line in Model)
     {
         <!-- timeline series -->
@@ -22,7 +22,7 @@
                     <p class="description">@history.Description</p>
                     @if (!string.IsNullOrEmpty(history.LinkAddress))
                     {
-                        <a class="read-more-link primary-link" href="/doc/@history.LinkAddress">
+                        <a class="read-more-link primary-link" href="/doc/@history.LinkAddress" title="محمد امین امینی منش - @line.Title - @history.Title">
                             @history.LinkLabel
                             <i class="bi bi-chevron-left"></i>
                         </a>

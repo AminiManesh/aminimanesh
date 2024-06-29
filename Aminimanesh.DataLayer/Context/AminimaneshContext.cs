@@ -1,9 +1,12 @@
 ﻿using Aminimanesh.DataLayer.Entities.Owner;
 using Aminimanesh.DataLayer.Entities.User;
+using Azure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,5 +34,14 @@ namespace Aminimanesh.DataLayer.Context
         public DbSet<Speech> Speechs { get; set; }
 
         public DbSet<User> User { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Project>().HasQueryFilter(p => !p.IsDeleted);
+            modelBuilder.Entity<Category>().HasQueryFilter(c => !c.IsDeleted);
+            modelBuilder.Entity<HistoryLine>().HasQueryFilter(hl => !hl.IsDeleted);
+        }
     }
 }
