@@ -14328,23 +14328,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Amin\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Aminimanesh.Web.csproj",
+      "projectUniqueName": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\Aminimanesh.Web.csproj",
       "projectName": "Aminimanesh.Web",
-      "projectPath": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\Aminimanesh.Web.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Web\\obj\\",
+      "projectPath": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\Aminimanesh.Web.csproj",
+      "packagesPath": "C:\\Users\\Amin\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Amin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -14360,11 +14360,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Core\\Aminimanesh.Core.csproj": {
-              "projectPath": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.Core\\Aminimanesh.Core.csproj"
+            "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Core\\Aminimanesh.Core.csproj": {
+              "projectPath": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Core\\Aminimanesh.Core.csproj"
             },
-            "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.DataLayer\\Aminimanesh.DataLayer.csproj": {
-              "projectPath": "C:\\ProgrammingFiles\\ASP.Net Core Projects\\Aminimanesh\\Aminimanesh.DataLayer\\Aminimanesh.DataLayer.csproj"
+            "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.DataLayer\\Aminimanesh.DataLayer.csproj": {
+              "projectPath": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.DataLayer\\Aminimanesh.DataLayer.csproj"
             }
           }
         }
@@ -14373,11 +14373,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -14434,7 +14429,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
