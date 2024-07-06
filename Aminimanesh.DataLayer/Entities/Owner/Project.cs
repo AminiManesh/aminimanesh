@@ -67,6 +67,11 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Required]
         public bool IsDeleted { get; set; }
 
+        [MaxLength]
+        [Display(Name = "لینک مشاهده پروژه")]
+        [Url(ErrorMessage = "فرمت {0} صحیح نیست.")]
+        public string? Url { get; set; }
+
         #region Relations
         public List<Attachment> Attachments { get; set; }
 

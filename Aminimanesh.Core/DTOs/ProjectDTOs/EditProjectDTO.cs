@@ -52,6 +52,11 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string CustomerLocation { get; set; }
 
+        [MaxLength]
+        [Display(Name = "لینک مشاهده پروژه")]
+        [Url(ErrorMessage = "فرمت {0} صحیح نیست.")]
+        public string? Url { get; set; }
+
         public List<AttachmentListItemDTO>? Attachments { get; set; }
     }
 }
