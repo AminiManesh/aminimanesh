@@ -16421,6 +16421,14 @@
       "PackagePath": "staticwebassets\\owner\\img\\thumbnails\\avatar.jpg"
     },
     {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\cover\\Presentation.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\cover\\Presentation.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\cover\\thumbnail\\Presentation.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\cover\\thumbnail\\Presentation.jpg"
+    },
+    {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Aminimanesh.Web.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
