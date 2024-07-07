@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aminimanesh.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bb55dda93ba3187bed15c2201468581bcbcb0f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aminimanesh.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aminimanesh.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

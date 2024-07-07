@@ -9,12 +9,10 @@ namespace Aminimanesh.Web.Controllers
 {
     public class ProjectController : Controller
     {
-        private readonly IDistributedCache _cache;
         private readonly IProjectService _projectService;
-        public ProjectController(IProjectService projectService, IDistributedCache distributedCache)
+        public ProjectController(IProjectService projectService)
         {
             _projectService = projectService;
-            _cache = distributedCache;
         }
 
         public IActionResult Index()

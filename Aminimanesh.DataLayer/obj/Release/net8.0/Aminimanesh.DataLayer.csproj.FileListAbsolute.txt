@@ -12,3 +12,18 @@ C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\
 C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.pdb
 C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.genruntimeconfig.cache
 C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\ref\Aminimanesh.DataLayer.dll
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.deps.json
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.runtimeconfig.json
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.dll
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\bin\Release\net8.0\Aminimanesh.DataLayer.pdb
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.csproj.AssemblyReference.cache
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.AssemblyInfoInputs.cache
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.AssemblyInfo.cs
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.csproj.CoreCompileInputs.cache
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.sourcelink.json
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.dll
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\refint\Aminimanesh.DataLayer.dll
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.pdb
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\Aminimanesh.DataLayer.genruntimeconfig.cache
+D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.DataLayer\obj\Release\net8.0\ref\Aminimanesh.DataLayer.dll

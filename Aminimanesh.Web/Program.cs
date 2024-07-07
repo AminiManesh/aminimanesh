@@ -11,7 +11,6 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
-builder.Services.AddResponseCaching();
 builder.Services.AddAutoMapper(typeof(CustomProfile), typeof(Program));
 
 // other service configurations...

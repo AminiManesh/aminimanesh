@@ -21,7 +21,6 @@ namespace Aminimanesh.Web.Controllers
         }
 
         [Route("GetSpeechs")]
-        [ResponseCache(Duration = 3600)]
         public async Task<IActionResult> GetSpeechs()
         {
             var speechs = await _serviceService.GetAllSpeechsAsync();

@@ -7477,44 +7477,16 @@
       "PackagePath": "staticwebassets\\img\\background2.jpg"
     },
     {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\discover-min.jpg",
+      "PackagePath": "staticwebassets\\img\\discover-min.jpg"
+    },
+    {
       "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\discover.jpg",
       "PackagePath": "staticwebassets\\img\\discover.jpg"
     },
     {
       "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\discover2.jpg",
       "PackagePath": "staticwebassets\\img\\discover2.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\1.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\1.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\2.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\2.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\3.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\3.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\4.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\4.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\5.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\5.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\6.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\6.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\7.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\7.jpg"
-    },
-    {
-      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\img\\sublime\\thumbnail.jpg",
-      "PackagePath": "staticwebassets\\img\\sublime\\thumbnail.jpg"
     },
     {
       "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\js\\all.min.js",

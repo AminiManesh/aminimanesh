@@ -17,115 +17,279 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Aminimanesh.Web
 build_property.RootNamespace = Aminimanesh.Web
-build_property.ProjectDir = C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Web\
+build_property.ProjectDir = D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\ProgrammingFiles\ASP.Net Core Projects\Aminimanesh\Aminimanesh.Web
+build_property.MSBuildProjectDirectory = D:\Programming Files\ASP.Net Core Projects\aminimanesh\Aminimanesh.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Error/ErrorPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3JQYWdlLmNzaHRtbA==
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/History/CreateHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yeVxDcmVhdGVIaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Home/Index.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/History/CreateHistoryLine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yeVxDcmVhdGVIaXN0b3J5TGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/History/EditHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yeVxFZGl0SGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/History/EditHistoryLine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yeVxFZGl0SGlzdG9yeUxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/History/HistoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yeVxIaXN0b3J5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/History/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSGlzdG9yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Language/CreateLanguage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGFuZ3VhZ2VcQ3JlYXRlTGFuZ3VhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Language/EditLanguage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGFuZ3VhZ2VcRWRpdExhbmd1YWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Language/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGFuZ3VhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Owner/CreateOwner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3duZXJcQ3JlYXRlT3duZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Owner/EditOwner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3duZXJcRWRpdE93bmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Owner/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3duZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Owner/OwnerExists.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3duZXJcT3duZXJFeGlzdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Project/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Project/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxDcmVhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Project/CreateProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxDcmVhdGVQcm9qZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Project/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxFZGl0Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Project/EditProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxFZGl0UHJvamVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Project/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvamVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Service/CreateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxDcmVhdGVTZXJ2aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Service/EditService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxFZGl0U2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Shared/Components/MessagesDropdownComponent/MessagesDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVzc2FnZXNEcm9wZG93bkNvbXBvbmVudFxNZXNzYWdlc0Ryb3Bkb3duLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Shared/_Topbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Ub3BiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Skill/CreateSkill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2tpbGxcQ3JlYXRlU2tpbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Skill/EditSkill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2tpbGxcRWRpdFNraWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Skill/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2tpbGxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Social/CreateSocial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29jaWFsXENyZWF0ZVNvY2lhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Social/EditSocial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29jaWFsXEVkaXRTb2NpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Social/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29jaWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Speech/CreateSpeech.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlZWNoXENyZWF0ZVNwZWVjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Speech/EditSpeech.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlZWNoXEVkaXRTcGVlY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/Speech/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlZWNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/User/ChangeCredentials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDaGFuZ2VDcmVkZW50aWFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/Views/User/UserInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxVc2VySW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Areas/Admin/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Error/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Project/GetProjects.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Project/GetProjects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxHZXRQcm9qZWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Project/Project.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxQcm9qZWN0LmNzaHRtbA==
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Project/ShowProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxTaG93UHJvamVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/CategoriesComponent/Categories.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/CategoriesComponent/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmllc0NvbXBvbmVudFxDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/CommonInfoComponent/CommonInfo.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/CommonInfoComponent/CommonInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tbW9uSW5mb0NvbXBvbmVudFxDb21tb25JbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/ContactInfoComponent/ContactInfo.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/ContactInfoComponent/ContactInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29udGFjdEluZm9Db21wb25lbnRcQ29udGFjdEluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/ExperienceInfoComponent/ExperienceInfo.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/ExperienceInfoComponent/ExperienceInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXhwZXJpZW5jZUluZm9Db21wb25lbnRcRXhwZXJpZW5jZUluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/HistoryLinesComponent/HistoryLines.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/HistoryLinesComponent/HistoryLines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGlzdG9yeUxpbmVzQ29tcG9uZW50XEhpc3RvcnlMaW5lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/LanguagesComponent/Languages.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/LanguagesComponent/Languages.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGFuZ3VhZ2VzQ29tcG9uZW50XExhbmd1YWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/ProfileInfoComponent/ProfileInfo.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/ProfileInfoComponent/ProfileInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZmlsZUluZm9Db21wb25lbnRcUHJvZmlsZUluZm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/ServicesComponent/Services.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/ServicesComponent/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VydmljZXNDb21wb25lbnRcU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/SideSkillsComponent/SideSkills.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/SideSkillsComponent/SideSkills.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2lkZVNraWxsc0NvbXBvbmVudFxTaWRlU2tpbGxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/SkillsComponent/Skills.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/SkillsComponent/Skills.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2tpbGxzQ29tcG9uZW50XFNraWxscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/Components/SocialsComponent/Socials.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/Components/SocialsComponent/Socials.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU29jaWFsc0NvbXBvbmVudFxTb2NpYWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/EmailMessage.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/EmailMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVtYWlsTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_Footer.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_Header.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_ImageModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbWFnZU1vZGFsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_Layout.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_Scripts.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_Sidebar.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_Styles.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_Styles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHlsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/_ViewImports.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ProgrammingFiles/ASP.Net Core Projects/Aminimanesh/Aminimanesh.Web/Views/_ViewStart.cshtml]
+[D:/Programming Files/ASP.Net Core Projects/aminimanesh/Aminimanesh.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

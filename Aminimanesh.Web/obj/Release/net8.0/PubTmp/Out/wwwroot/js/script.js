@@ -1,6 +1,5 @@
-$(document).on("load", function () {
+﻿$(document).on("load", function () {
     $(window).bind("resize", SetupCarousel);
-    ResizeImageModal();
 });
 
 
@@ -14,12 +13,31 @@ function workBody() {
     }
 }
 
+function getProjects(categoryId = 0) {
+    console.log("get projects, categoryId = " + categoryId);
+    $("#projectsList").load('/project/GetProjects?categoryId=' + categoryId, function () {
+        workBody();
+        initFancyBox();
+    });
+}
 
+function initFancyBox() {
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+}
+
+function toggleDes(el) {
+    $(".description-box .description").toggleClass("closed");
+    if (el.innerHTML === "مشاهده بیشتر") {
+        el.innerHTML = "مشاهده کمتر";
+    } else {
+        el.innerHTML = "مشاهده بیشتر";
+    }
+}
 
 $(document).ready(async function () {
-
-    ResizeImageModal();
-    getProjects();
+    
     var speechs = [];
     $.ajax({
         type: 'get',
@@ -59,23 +77,6 @@ $(document).ready(async function () {
         CloseMainMenu();
     });
 
-    $('.open-image').click(function (e) {
-        var imgSource = $(this).children('img').attr('src');
-        var imgAlt = $(this).children('img').attr('alt');
-        $('.image-modal-container').find('img').attr("src", imgSource);
-        $('.image-modal-container').find('img').attr("alt", imgAlt);
-        $('.image-modal-container').toggleClass("opened");
-        ResizeImageModal();
-    });
-
-    $('.image-modal-background').click(function (e) {
-        $('.image-modal-container').removeClass("opened");
-    });
-
-    $('.image-modal-close').click(function (e) {
-        $('.image-modal-container').removeClass("opened");
-    });
-
     $('.send-message .input-box .inputter').on(
         {
             focus: function () {
@@ -96,7 +97,7 @@ $(document).ready(async function () {
     );
 
     $('.owl-carousel').owlCarousel({
-        items: 2,
+        items: 1,
         margin: 30,
         center: false,
         slideTransition: "ease",
@@ -107,96 +108,94 @@ $(document).ready(async function () {
             0: {
                 items: 1
             },
-            768: {
+            576: {
                 items: 2
+            },
+            992: {
+                items: 1
+            },
+            1200: {
+                items: 2
+            },
+            1400: {
+                items: 3
             }
         }
     });
+
+    initFancyBox();
+    getProjects();
+  
+});
+
+SetupCarousel();
+
+$(window).resize(function (event) {
+    event.preventDefault();
     SetupCarousel();
+});
 
-    $(window).resize(function (event) {
-        event.preventDefault();
-        SetupCarousel();
-    });
+// Functions
 
-    // Functions
+function SetupCarousel() {
+    $('.owl-dot').html("");
 
-    function ResizeImageModal(params) {
-        var windowHeight = $(window).height();
-        var windowWidth = $(window).width();
-        var imgWidth = $('.image-modal-box').width();
-        var imgHeight = $('.image-modal-box').height();
+    var rightIcon = document.createElement("i");
+    $(rightIcon).addClass("bi bi-chevron-right");
+    $('.owl-nav > .owl-next').html(rightIcon);
 
-        var newImgWidth = (imgWidth * windowHeight) / imgHeight;
+    var leftIcon = document.createElement("i");
+    $(leftIcon).addClass("bi bi-chevron-left");
+    $('.owl-nav > .owl-prev').html(leftIcon);
+}
 
-        if (newImgWidth > (windowWidth * 6) / 10) {
-            $('.image-modal-box').width(newImgWidth - (windowWidth / 3));
-        }
-        if (newImgWidth < (windowWidth * 6) / 10) {
-            $('.image-modal-box').width(newImgWidth - 50);
-        }
+function ToggleMainMenu() {
+    $('.main-menu').toggleClass('opened');
+    if ($('.main-menu').hasClass('opened')) {
+        $('.dark-overlay').fadeIn(300);
     }
-
-    function SetupCarousel() {
-        $('.owl-dot').html("");
-
-        var rightIcon = document.createElement("i");
-        $(rightIcon).addClass("bi bi-chevron-right");
-        $('.owl-nav > .owl-next').html(rightIcon);
-
-        var leftIcon = document.createElement("i");
-        $(leftIcon).addClass("bi bi-chevron-left");
-        $('.owl-nav > .owl-prev').html(leftIcon);
-    }
-
-    function ToggleMainMenu() {
-        $('.main-menu').toggleClass('opened');
-        if ($('.main-menu').hasClass('opened')) {
-            $('.dark-overlay').fadeIn(300);
-        }
-        else {
-            $('.dark-overlay').fadeOut(300);
-        }
-    }
-
-    function CloseMainMenu() {
-        $('.main-menu').removeClass('opened');
+    else {
         $('.dark-overlay').fadeOut(300);
     }
+}
 
-    async function typer(speechs) {
-        for (let i = 0; i < speechs.length; i++) {
-            await writeCode(speechs[i]);
-            await delay(1500);
-            await clearCode(speechs[i]);
+function CloseMainMenu() {
+    $('.main-menu').removeClass('opened');
+    $('.dark-overlay').fadeOut(300);
+}
+
+async function typer(speechs) {
+    for (let i = 0; i < speechs.length; i++) {
+        await writeCode(speechs[i]);
+        await delay(1500);
+        await clearCode(speechs[i]);
+    }
+    typer(speechs);
+}
+
+async function writeCode(text) {
+    var now = "";
+    for (let j = 0; j < text.length; j++) {
+        await delay(100);
+        now += text[j];
+        $('.code>.speech').text(now);
+    }
+}
+
+async function clearCode(text) {
+    var now = text;
+    for (let i = text.length; i > -1; i--) {
+        await delay(40);
+        now = text.substring(0, i);
+        $('.code>.speech').text(now);
+        if (i == 0) {
+            await delay(750);
         }
-        typer(speechs);
     }
+}
 
-    async function writeCode(text) {
-        var now = "";
-        for (let j = 0; j < text.length; j++) {
-            await delay(100);
-            now += text[j];
-            $('.code>.speech').text(now);
-        }
-    }
-
-    async function clearCode(text) {
-        var now = text;
-        for (let i = text.length; i > -1; i--) {
-            await delay(40);
-            now = text.substring(0, i);
-            $('.code>.speech').text(now);
-            if (i == 0) {
-                await delay(750);
-            }
-        }
-    }
-
-    function delay(milliseconds) {
-        return new Promise(resolve => {
-            setTimeout(resolve, milliseconds);
-        });
-    }
-});
+function delay(milliseconds) {
+    return new Promise(resolve => {
+        setTimeout(resolve, milliseconds);
+    });
+}

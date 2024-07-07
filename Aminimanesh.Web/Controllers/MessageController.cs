@@ -29,7 +29,9 @@ namespace Aminimanesh.Web.Controllers
 
             message.SendDate = DateTime.Now;
             var body = _renderView.RenderToStringAsync("EmailMessage", message);
+            var successBody = _renderView.RenderToStringAsync("EmailSent", message);
             SendEmail.Send(await _ownerService.GetIncomeEmailAsync(), $"aminimanesh.ir | Message from {message.SenderEmail}", body);
+            SendEmail.Send(message.SenderEmail, $"پیام شما ارسال شد", successBody);
 
             await _serviceService.AddMessageAsync(message);
 
