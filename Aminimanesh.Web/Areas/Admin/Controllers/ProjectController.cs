@@ -155,9 +155,9 @@ namespace Aminimanesh.Web.Areas.Admin.Controllers
                         Directory.CreateDirectory(saveThumbPath);
                     }
 
-                    await FileTools.SaveThumbnailAsync(Path.Combine(savePath, cover.FileName), saveThumbPathFull);
                     FileTools.DeletePreviousFile(saveThumbPath, project.Thumbnail);
-
+                    await FileTools.SaveThumbnailAsync(Path.Combine(savePath, cover.FileName), saveThumbPathFull);
+                   
                     project.Thumbnail = cover.FileName;
                 }
                 else
