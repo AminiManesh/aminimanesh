@@ -9,6 +9,13 @@
     <link href="/admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="/lib/dropzone/dropzone.min.css" rel="stylesheet">
     <link href="/lib/onyx/css/onyx.css" rel="stylesheet">
+
+    <style>
+        .ck-editor__editable[role="textbox"] {
+            /* Editing area */
+            min-height: 500px;
+        }
+    </style>
 }
 
 <!-- Page Heading -->
@@ -52,6 +59,7 @@
             <div class="form-group">
                 <textarea class="form-control" asp-for="@Model.Description" placeholder="Description" value="@Model.Description"></textarea>
             </div>
+
             <div class="form-group row">
                 <div class="col-sm-4 mb-3 mb-sm-0">
                     <input type="text" class="form-control" asp-for="@Model.OrderDate" value="@Model.OrderDate"

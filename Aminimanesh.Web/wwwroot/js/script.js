@@ -29,10 +29,10 @@ function initFancyBox() {
 
 function toggleDes(el) {
     $(".description-box .description").toggleClass("closed");
-    if (el.innerHTML === "مشاهده بیشتر") {
-        el.innerHTML = "مشاهده کمتر";
+    if (el.innerHTML === "بیشتر") {
+        el.innerHTML = "کمتر";
     } else {
-        el.innerHTML = "مشاهده بیشتر";
+        el.innerHTML = "بیشتر";
     }
 }
 

@@ -16421,6 +16421,38 @@
       "PackagePath": "staticwebassets\\owner\\img\\thumbnails\\avatar.jpg"
     },
     {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\05d4588661fb4f4c94678d3de6177d90.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\05d4588661fb4f4c94678d3de6177d90.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\097065fe8e40424eac0c92539322c33f.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\097065fe8e40424eac0c92539322c33f.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\262ca2a5f19d415ba81260824ed79f44.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\262ca2a5f19d415ba81260824ed79f44.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\bd759d10f9074781bc37a9ac3cf068ec.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\bd759d10f9074781bc37a9ac3cf068ec.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\05d4588661fb4f4c94678d3de6177d90.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\05d4588661fb4f4c94678d3de6177d90.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\097065fe8e40424eac0c92539322c33f.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\097065fe8e40424eac0c92539322c33f.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\262ca2a5f19d415ba81260824ed79f44.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\262ca2a5f19d415ba81260824ed79f44.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\bd759d10f9074781bc37a9ac3cf068ec.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\bd759d10f9074781bc37a9ac3cf068ec.jpg"
+    },
+    {
       "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\cover\\Presentation.jpg",
       "PackagePath": "staticwebassets\\owner\\projects\\2015\\cover\\Presentation.jpg"
     },

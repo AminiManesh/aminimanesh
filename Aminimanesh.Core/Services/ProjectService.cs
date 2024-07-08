@@ -109,7 +109,7 @@ namespace Aminimanesh.Core.Services
                 .IgnoreQueryFilters()
                 .Include(p => p.Category)
                 .Include(p => p.Attachments)
-                .SingleAsync(p => p.UrlTitle == projectName);
+                .SingleAsync(p => p.UrlTitle == projectName && !p.IsDeleted);
             return _mapper.Map<ProjectGeneralDTO>(project);
         }
 

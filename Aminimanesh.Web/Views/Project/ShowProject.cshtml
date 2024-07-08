@@ -70,7 +70,7 @@
                     <div class="owl-item">
                         <a href="#" title="@Model.Title - @image.ShortDescription" data-fancybox="gallery-@image.ProjectId" data-caption="@image.ShortDescription" data-src="/owner/projects/@image.ProjectId/attachments/@image.FileName" class="open-image">
                             <span class="expander"><i class="bi bi-fullscreen"></i></span>
-                            <img src="/owner/projects/@image.ProjectId/attachments/thumbnails/@image.FileName" alt="امینی منش - @Model.ShortDescription">
+                            <img src="/owner/projects/@image.ProjectId/attachments/thumbnails/@image.FileName" alt="امینی منش - @Model.Title">
                         </a>
                     </div>
                 }
@@ -86,9 +86,11 @@
         <div class="col col-12 col-md-8 col-xxl-9">
             <div class="description-box">
                 <h5 class="mini-header">توضیحات</h5>
-                <p class="description closed">@Model.Description</p>
-                <button class="big-button portfolio-button d-block mx-auto rounded-5 p-1 px-3 mb-1" onclick="toggleDes(this)" id="showMore">مشاهده بیشتر</button>
-                <a title="مشاهده @Model.Title - @Model.Category.Title" class="read-more-link primary-link" href="@Model.Url" target="_blank"><i class="bi bi-chevron-left"></i>مشاهده پروژه</a>
+                <div class="description closed">
+                    @Html.Raw(Model.Description)
+                </div>
+                <a class="primary-link d-block mx-auto text-center" onclick="toggleDes(this)" id="showMore">بیشتر</a>
+                <a title="مشاهده @Model.Title - @Model.Category.Title" class="big-button portfolio-button py-1 px-3 m-0 rounded-5" href="@Model.Url" target="_blank">مشاهده پروژه</a>
             </div>
         </div>
         <!-- project details -->
@@ -128,19 +130,19 @@
                 <h3 class="box-heading">به اشتراک گذاری</h3>
                 <div class="row row-cols-3 row-cols-sm-4 row-cols-lg-3 g-4 justify-content-center">
                     <div class="col">
-                        <a class="share-link primary-link" href="@redditShareLink" title="اشتراک گذاری @Model.Title در Reddit"><i class="bi bi-reddit"></i></a>
-                    </div>
-                     <div class="col">
-                        <a class="share-link primary-link" href="@telegramShareLink" title="اشتراک گذاری @Model.Title در Telegram"><i class="bi bi-telegram"></i></a>
+                        <a target="_blank" class="share-link primary-link" href="@redditShareLink" title="اشتراک گذاری @Model.Title در Reddit"><i class="bi bi-reddit"></i></a>
                     </div>
                     <div class="col">
-                        <a class="share-link primary-link" href="@twitterShareLink" title="اشتراک گذاری @Model.Title در Twitter - X"><i class="bi bi-twitter-x"></i></a>
+                        <a target="_blank" class="share-link primary-link" href="@telegramShareLink" title="اشتراک گذاری @Model.Title در Telegram"><i class="bi bi-telegram"></i></a>
                     </div>
                     <div class="col">
-                        <a class="share-link primary-link" href="@linkedinShareLink" title="اشتراک گذاری @Model.Title در LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a target="_blank" class="share-link primary-link" href="@twitterShareLink" title="اشتراک گذاری @Model.Title در Twitter - X"><i class="bi bi-twitter-x"></i></a>
                     </div>
                     <div class="col">
-                        <a class="share-link primary-link" href="@facebookShareLink" title="اشتراک گذاری @Model.Title در Facebook"><i class="bi bi-facebook"></i></a>
+                        <a target="_blank" class="share-link primary-link" href="@linkedinShareLink" title="اشتراک گذاری @Model.Title در LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="col">
+                        <a target="_blank" class="share-link primary-link" href="@facebookShareLink" title="اشتراک گذاری @Model.Title در Facebook"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
             </div>

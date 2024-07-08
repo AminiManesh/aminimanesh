@@ -95,18 +95,7 @@
 
 
 @section Scripts {
-    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.0/classic/ckeditor.js"></script>
-
     <script>
-        ClassicEditor
-            .create(document.querySelector('#Description'))
-            .then(editor => {
-                console.log(editor);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-
         Thumbnail.onchange = evt => {
             const [file] = Thumbnail.files
             if (file) {
