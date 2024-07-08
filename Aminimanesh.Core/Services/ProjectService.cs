@@ -53,6 +53,16 @@ namespace Aminimanesh.Core.Services
             return exists;
         }
 
+        public async Task<int> UpdateAttachment(int attachmentId, string attachmentName, string shortDescription)
+        {
+            var attachment = await _context.Attachments.FindAsync(attachmentId);
+            attachment.ShowName = attachmentName;
+            attachment.ShortDescription = shortDescription;
+            _context.Attachments.Update(attachment);
+            await _context.SaveChangesAsync();
+            return attachment.AttachmentId;
+        }
+
         public async Task<List<CategoryListItemDTO>> GetAllCategoriesAsync()
         {
             var categories = await _context.Categories.Include(c => c.Projects).ToListAsync();

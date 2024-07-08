@@ -29,6 +29,8 @@ namespace Aminimanesh.Core.Services.Interfaces
         Task<AttachmentListItemDTO> GetAttachmentById(int attachmentId);
         Task RemoveAttachmentByIdAsync(int attachmentId);
 
+        Task<int> UpdateAttachment(int attachmentId, string attachmentName, string shortDescription);
+
         Task<Tuple<List<CategoryListItemDTO>, int>> GetCategoriesForFilter();
 
         #region Category
