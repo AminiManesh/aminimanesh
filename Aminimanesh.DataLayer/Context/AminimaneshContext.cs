@@ -32,7 +32,6 @@ namespace Aminimanesh.DataLayer.Context
         public DbSet<Skill> Skills { get; set; }
         public DbSet<Social> Socials { get; set; }
         public DbSet<Speech> Speechs { get; set; }
-
         public DbSet<User> User { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,6 +41,7 @@ namespace Aminimanesh.DataLayer.Context
             modelBuilder.Entity<Project>().HasQueryFilter(p => !p.IsDeleted);
             modelBuilder.Entity<Category>().HasQueryFilter(c => !c.IsDeleted);
             modelBuilder.Entity<HistoryLine>().HasQueryFilter(hl => !hl.IsDeleted);
+            modelBuilder.Entity<Message>().HasQueryFilter(m => !m.IsDeleted);
         }
     }
 }

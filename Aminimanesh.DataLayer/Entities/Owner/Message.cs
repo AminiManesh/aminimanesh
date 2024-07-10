@@ -30,5 +30,9 @@ namespace Aminimanesh.DataLayer.Entities.Owner
 
         [Display(Name = "تاریخ ارسال")]
         public DateTime? SendDate { get; set; }
+
+        public string UserIP { get; set; }
+
+        public bool IsDeleted { get; set; }
     }
 }

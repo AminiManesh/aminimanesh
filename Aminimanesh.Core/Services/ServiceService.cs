@@ -63,6 +63,16 @@ namespace Aminimanesh.Core.Services
             return _mapper.Map<List<SpeechListItemDTO>>(speech);
         }
 
+        public async Task<List<Message>> GetDeletedMessages()
+        {
+            var messages = await _context.Messages
+                .IgnoreQueryFilters()
+                .Where(m => m.IsDeleted)
+                .OrderByDescending(m => m.SendDate)
+                .ToListAsync();
+            return messages;
+        }
+
         public async Task<List<Message>> GetNewMessages(int take)
         {
             var messages = await _context.Messages.OrderByDescending(m => m.SendDate).Take(take).ToListAsync();
@@ -81,6 +91,14 @@ namespace Aminimanesh.Core.Services
             return speech;
         }
 
+        public async Task RemoveMessageByIdAsync(int messageId)
+        {
+            var message = await _context.Messages.FindAsync(messageId);
+            message.IsDeleted = true;
+            _context.Messages.Update(message);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task RemoveServiceByIdAsync(int serviceId)
         {
             var service = await _context.Services.FindAsync(serviceId);
@@ -92,6 +110,14 @@ namespace Aminimanesh.Core.Services
         {
             var speech = await GetSpeechByIdAsync(speechId);
             _context.Speechs.Remove(speech);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task RestoreMessageByIdAsync(int messageId)
+        {
+            var message = await _context.Messages.IgnoreQueryFilters().SingleAsync(m => m.MessageId == messageId);
+            message.IsDeleted = false;
+            _context.Messages.Update(message);
             await _context.SaveChangesAsync();
         }
 

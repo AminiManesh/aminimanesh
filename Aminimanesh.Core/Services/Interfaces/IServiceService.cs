@@ -29,7 +29,11 @@ namespace Aminimanesh.Core.Services.Interfaces
         #region Message
         Task<List<Message>> GetAllMessages();
         Task<List<Message>> GetNewMessages(int take);
+        Task<List<Message>> GetDeletedMessages();
         Task<int> AddMessageAsync(Message message);
+
+        Task RemoveMessageByIdAsync(int messageId);
+        Task RestoreMessageByIdAsync(int messageId);
         #endregion
     }
 }
