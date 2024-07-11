@@ -34,6 +34,8 @@ namespace Aminimanesh.Core.Services.Interfaces
 
         Task RemoveMessageByIdAsync(int messageId);
         Task RestoreMessageByIdAsync(int messageId);
+
+        Task<Message> GetMessageByIdAsync(int messageId);
         #endregion
     }
 }

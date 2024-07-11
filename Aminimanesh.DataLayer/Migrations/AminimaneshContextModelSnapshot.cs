@@ -155,6 +155,52 @@ namespace Aminimanesh.DataLayer.Migrations
                     b.ToTable("HistoryLines");
                 });
 
+            modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.IpApiResponse", b =>
+                {
+                    b.Property<int>("IpApiResponseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IpApiResponseId"));
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Continent")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("District")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ISP")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("Lat")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Lon")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Query")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RegionName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Zip")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IpApiResponseId");
+
+                    b.ToTable("IpApiResponses");
+                });
+
             modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Language", b =>
                 {
                     b.Property<int>("LanguageId")
@@ -184,12 +230,24 @@ namespace Aminimanesh.DataLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MessageId"));
 
+                    b.Property<string>("ActualIPAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CloudflareActualIPAddress")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Content")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("IpApiResponseId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
+
+                    b.Property<string>("RemoteIPAddress")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("SendDate")
                         .HasColumnType("datetime2");
@@ -199,16 +257,18 @@ namespace Aminimanesh.DataLayer.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
+                    b.Property<string>("SenderMobile")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.Property<string>("SenderName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("UserIP")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("MessageId");
+
+                    b.HasIndex("IpApiResponseId");
 
                     b.ToTable("Messages");
                 });
@@ -531,6 +591,15 @@ namespace Aminimanesh.DataLayer.Migrations
                         .IsRequired();
 
                     b.Navigation("HistoryLine");
+                });
+
+            modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Message", b =>
+                {
+                    b.HasOne("Aminimanesh.DataLayer.Entities.Owner.IpApiResponse", "IpApiResponse")
+                        .WithMany()
+                        .HasForeignKey("IpApiResponseId");
+
+                    b.Navigation("IpApiResponse");
                 });
 
             modelBuilder.Entity("Aminimanesh.DataLayer.Entities.Owner.Project", b =>

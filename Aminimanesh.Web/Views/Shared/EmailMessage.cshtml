@@ -13,13 +13,83 @@
         <h1 style="font-size: 24px; color: #ffc107; margin: 0;">@Model.SenderName</h1>
         <div style="padding-top: 30px;">
             <div>
-                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc;">ایمیل:</p>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">ایمیل:</p>
                 <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.SenderEmail</span>
                 <div style="clear: both;"></div>
             </div>
             <div>
-                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc;">زمان:</p>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">زمان:</p>
                 <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.SendDate.Value.ToLongShamsi()</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">RemoteIPAddress:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.RemoteIPAddress</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">ActualIPAddress:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.ActualIPAddress</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">CloudflareActualIPAddress:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.CloudflareActualIPAddress</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Status:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Status</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Continent:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Continent</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Country:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Country</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Region:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.RegionName</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">City:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.City</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">District:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.District</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Zip:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Zip</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Lat:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Lat</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Lon:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Lon</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">ISP:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.ISP</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <p style="float: right; display: inline; width: fit-content; font-size: 16px; font-weight: 600; margin: 0; color: #fafafc; direction: rtl;">Query:</p>
+                <span style="float: left; display:inline; width: fit-content; font-size: 14px; font-weight: 500; color: #8c8c8e;">@Model.IpApiResponse.Query</span>
                 <div style="clear: both;"></div>
             </div>
         </div>

@@ -33,6 +33,7 @@ namespace Aminimanesh.DataLayer.Context
         public DbSet<Social> Socials { get; set; }
         public DbSet<Speech> Speechs { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<IpApiResponse> IpApiResponses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

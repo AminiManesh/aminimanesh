@@ -84,6 +84,10 @@ ul {
     vertical-align: middle;
 }
 
+.fancybox__caption {
+    direction: rtl;
+}
+
 .main-section-heading {
     font-size: 18px;
     font-weight: 700;

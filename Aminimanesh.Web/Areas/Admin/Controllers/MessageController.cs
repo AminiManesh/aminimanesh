@@ -42,5 +42,12 @@ namespace Aminimanesh.Web.Areas.Admin.Controllers
             await _serviceService.RestoreMessageByIdAsync(id);
             return RedirectToAction("GetDeletedMessages");
         }
+
+        [Route("message-info")]
+        public async Task<IActionResult> GetMessageInfo(int id)
+        {
+            var model = await _serviceService.GetMessageByIdAsync(id);
+            return View(model);
+        }
     }
 }

@@ -152,7 +152,7 @@
 <!-- landing -->
 <section class="landing" id="landing">
     <section class="work-stats">
-        <cache expires-after="@TimeSpan.FromHours(1)">
+        <cache expires-after="@TimeSpan.FromMinutes(5)">
             @await Component.InvokeAsync("ExperienceInfoComponent")
         </cache>
     </section>

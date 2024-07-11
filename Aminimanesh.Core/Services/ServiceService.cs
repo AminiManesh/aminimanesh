@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -71,6 +72,15 @@ namespace Aminimanesh.Core.Services
                 .OrderByDescending(m => m.SendDate)
                 .ToListAsync();
             return messages;
+        }
+
+        public async Task<Message> GetMessageByIdAsync(int messageId)
+        {
+            var message = await _context.Messages
+                .IgnoreQueryFilters()
+                .Include(m => m.IpApiResponse)
+                .SingleAsync(m => m.MessageId == messageId);
+            return message;
         }
 
         public async Task<List<Message>> GetNewMessages(int take)
