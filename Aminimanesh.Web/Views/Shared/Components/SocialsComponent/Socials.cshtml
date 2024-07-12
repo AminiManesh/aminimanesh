@@ -5,6 +5,6 @@
     @foreach (var social in Model)
     {
         <!-- social -->
-        <a href="@social.LinkAddress" target="_blank"><i class="bi bi-@social.Icon" title="@social.Title"></i></a>
+        <a rel="nofollow" href="@social.LinkAddress" target="_blank" title="@social.Title"><i class="bi bi-@social.Icon"></i></a>
     }
 </div>

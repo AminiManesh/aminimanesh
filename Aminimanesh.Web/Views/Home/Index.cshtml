@@ -5,7 +5,7 @@
 }
 
 @section MetaTags {
-    <meta name="description" content="من محمد امین امینی منش هستم، برنامه‌نویس سی‌شارپ و توسعه‌دهنده بک‌اند با چندین سال تجربه در توسعه نرم‌افزار. علاقه‌مند به حل چالش‌ها و پیشرفت مداوم در مهارت‌های تکنیکال خود هستم. توانمندی در تیم‌های هماهنگ و توانایی در حل مسائل از دیگر ویژگی‌های من می‌باشد.">
+    <meta name="description" content="محمد امین امینی منش، برنامه‌نویس سی‌شارپ و توسعه‌دهنده بک‌اند با چندین سال تجربه. علاقه‌مند به حل چالش‌ها و پیشرفت مستمر در مهارت‌های تکنیکال و تیمی.">
     <meta name="keywords" content="امینی منش, Amini Manesh, back-end developer, برنامه نویس, توسعه دهنده بک‌اند, برنامه نویس سی‌شارپ, csharp programmer">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="@currentUrl">
@@ -32,7 +32,7 @@
 <section class="landing" id="landing">
     <section class="discover row">
         <div class="col col-md-8 col-lg-12 col-xl-10 col-xxl-8">
-            <h2>با من بیشتر آشنا بشید! همین الان نمونه کارهام رو ببین.</h2>
+            <h1>معرفی محمد امین امینی منش! همین الان نمونه کارهام رو ببین.</h1>
             <p class="code" dir="ltr">
                 &lt;<span class="highlight">code</span>&gt;
                 <span class="text-pointer"></span>
@@ -57,7 +57,7 @@
 </section>
 
 <section class="portfolio" id="portfolio">
-    <h4 class="main-section-heading">نمونه کارها</h4>
+    <h2 class="main-section-heading">نمونه کارها</h2>
     <div class="portfolio-categories">
         <cache expires-after="@TimeSpan.FromMinutes(5)">
             @await Component.InvokeAsync("CategoriesComponent")
@@ -68,8 +68,8 @@
 </section>
 
 <section class="timelines" id="timelines">
-        @await Component.InvokeAsync("HistoryLinesComponent")
     <cache expires-after="@TimeSpan.FromMinutes(5)">
+        @await Component.InvokeAsync("HistoryLinesComponent")
     </cache>
 </section>
 
@@ -78,7 +78,7 @@
 
     <!-- contact informations -->
     <section class="contact-infos">
-        <h4 class="main-section-heading">اطلاعات تماس</h4>
+        <h2 class="main-section-heading">اطلاعات تماس</h2>
         <cache expires-after="@TimeSpan.FromMinutes(5)">
             @await Component.InvokeAsync("ContactInfoComponent")
         </cache>
@@ -86,7 +86,7 @@
 
     <!-- send message form (get in touch) -->
     <section class="send-message">
-        <h4 class="main-section-heading">در تماس باشید</h4>
+        <h2 class="main-section-heading">در تماس باشید</h2>
         <form method="post" class="send-message-form" id="messageForm">
 
             <div class="text-danger" asp-validation-summary="All"></div>
@@ -105,7 +105,7 @@
             </div>
             <div class="input-box">
                 <label>
-                    <i class="bi bi-at"></i>
+                    <i class="bi bi-phone-fill"></i>
                 </label>
                 <input name="mobile" id="mobile" class="inputter" type="text" placeholder="موبایل" />
             </div>
@@ -151,6 +151,13 @@
                             });
 
                             $("#messageForm")[0].reset();
+                        } else {
+                            Swal.fire({
+                                title: "خطا",
+                                text: response.message,
+                                confirmButtonText: "باشه",
+                                icon: "error"
+                            });
                         }
                     }
                 });

@@ -29,7 +29,7 @@ namespace Aminimanesh.Web.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(message);
+                return new JsonResult(new { success = false, message = "لطفا اطلاعات فرم را تکمیل کنید." });
             }
 
             message.SendDate = DateTime.Now;

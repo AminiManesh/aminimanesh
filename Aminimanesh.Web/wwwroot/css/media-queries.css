@@ -1,5 +1,6 @@
 @media screen and (min-width: 1400px) {
-    .landing>.discover>div>h2 {
+    .landing > .discover > div > h2,
+    .landing > .discover > div > h1 {
         font-size: 50px;
     }
 }
@@ -115,7 +116,8 @@
 }
 
 @media screen and (min-width: 576px) {
-    .landing>.discover>div>h2 {
+    .landing > .discover > div > h1,
+    .landing > .discover > div > h2 {
         font-size: 44px;
     }
 

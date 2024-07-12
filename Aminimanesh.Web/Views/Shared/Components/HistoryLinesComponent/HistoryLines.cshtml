@@ -6,7 +6,7 @@
     {
         <!-- timeline series -->
         <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-            <h4 class="main-section-heading">@line.Title</h4>
+            <h2 class="main-section-heading">@line.Title</h2>
             @foreach (var history in line.Histories)
             {
                 <!-- timeline -->
@@ -14,7 +14,7 @@
                     <span class="station beat"></span>
                     <div class="d-flex justify-content-between align-items-start flex-wrap">
                         <div class="heading">
-                            <h5 class="mini-header">@history.Title</h5>
+                            <h3 class="mini-header">@history.Title</h3>
                             <p class="sub-italic">@history.Adjective</p>
                         </div>
                         <span class="inset-box date">@history.StartTime - @history.EndTime</span>
@@ -22,7 +22,7 @@
                     <p class="description">@history.Description</p>
                     @if (!string.IsNullOrEmpty(history.LinkAddress))
                     {
-                        <a class="read-more-link primary-link" href="/doc/@history.LinkAddress" title="محمد امین امینی منش - @line.Title - @history.Title">
+                        <a class="read-more-link primary-link" rel="nofollow" href="/doc/@history.LinkAddress" title="@history.LinkLabel">
                             @history.LinkLabel
                             <i class="bi bi-chevron-left"></i>
                         </a>

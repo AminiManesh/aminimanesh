@@ -2,18 +2,18 @@
 @model ProfileInfoDTO
 
 <div class="profile-image">
-    <img src="/owner/img/@Model.Avatar" alt="محمد امین امینی منش">
+    <img src="/owner/img/@Model.Avatar" alt="محمد امین امینی منش" title="محمد امین امینی منش">
     <span class="status beat">
         <span class="availability">من برای همکاری و گرفتن پروژه آماده ام !</span>
     </span>
 </div>
-<a asp-controller="Home" asp-action="Index" title="امینی منش - برنامه نویس بک اند و فرانت اند و طراح وبسایت">
-    <h1 class="fullname">@Model.FullName</h1>
+<a asp-controller="Home" asp-action="Index" title="محمد امین امینی منش">
+    <h2 class="fullname">@Model.FullName</h2>
 </a>
-<p class="main-job">@Model.FirstJob</p>
-<p class="secondry-job">@Model.SecondJob</p>
+<h3 class="main-job">@Model.FirstJob</h3>
+<h3 class="secondry-job">@Model.SecondJob</h3>
 <!-- CV download link -->
-<a class="big-button download-cv" asp-controller="Owner" asp-action="DownloadCV" title="رزومه امینی منش - برنامه نویس بک اند و فرانت اند وبسایت">
+<a class="big-button download-cv" asp-controller="Owner" asp-action="DownloadCV" title="دانلود رزومه من">
     <i class="bi bi-download"></i>
     دانلود رزومه‌ی من
 </a>

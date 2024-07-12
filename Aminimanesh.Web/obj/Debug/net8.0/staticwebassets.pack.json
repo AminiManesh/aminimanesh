@@ -16421,6 +16421,30 @@
       "PackagePath": "staticwebassets\\owner\\img\\thumbnails\\avatar.jpg"
     },
     {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\7cce09f9cdfa4d298c90b1cb3c47baf7.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\7cce09f9cdfa4d298c90b1cb3c47baf7.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\8a0a9b02cfb74922a48de80f6c7a05af.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\8a0a9b02cfb74922a48de80f6c7a05af.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\a36c4b86d69e47cea4175d219806cdd1.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\a36c4b86d69e47cea4175d219806cdd1.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\7cce09f9cdfa4d298c90b1cb3c47baf7.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\7cce09f9cdfa4d298c90b1cb3c47baf7.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\8a0a9b02cfb74922a48de80f6c7a05af.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\8a0a9b02cfb74922a48de80f6c7a05af.jpg"
+    },
+    {
+      "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\a36c4b86d69e47cea4175d219806cdd1.jpg",
+      "PackagePath": "staticwebassets\\owner\\projects\\2015\\attachments\\thumbnails\\a36c4b86d69e47cea4175d219806cdd1.jpg"
+    },
+    {
       "Id": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\cover\\Presentation.jpg",
       "PackagePath": "staticwebassets\\owner\\projects\\2015\\cover\\Presentation.jpg"
     },

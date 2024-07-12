@@ -8,14 +8,14 @@
         <!-- work -->
         <div class="col col-12 col-md-6 col-xl-4">
             <article class="work">
-                <a href="#" title="@proj.Title" class="open-image" data-fancybox="gallery-@proj.ProjectId" data-caption="امینی منش - نمونه‌ کار @proj.CategoryTitle - @proj.ShortDescription" data-src="/owner/projects/@proj.ProjectId/cover/@proj.Thumbnail">
+                <a href="#" title="@proj.Title" class="open-image" data-fancybox="gallery-@proj.ProjectId" data-caption="@proj.ShortDescription" data-src="/owner/projects/@proj.ProjectId/cover/@proj.Thumbnail">
                     <span class="expander"><i class="bi bi-fullscreen"></i></span>
-                    <img class="img-fluid" src="/owner/projects/@proj.ProjectId/cover/thumbnail/@proj.Thumbnail" alt="امینی منش - نمونه‌ کار @proj.CategoryTitle - @proj.ShortDescription">
+                    <img class="img-fluid" src="/owner/projects/@proj.ProjectId/cover/thumbnail/@proj.Thumbnail" alt="@proj.Title" title="@proj.Title">
                 </a>
                 <div class="work-body">
-                    <h5 class="mini-header">@proj.Title</h5>
+                    <h3 class="mini-header">@proj.Title</h3>
                     <p class="description">@proj.ShortDescription</p>
-                    <a title="مشاهده @proj.Title - @proj.CategoryTitle" class="read-more-link primary-link" asp-controller="Project" asp-action="ShowProject" asp-route-category="@proj.CategoryTitle.Replace(" ", "-")" asp-route-name="@proj.UrlTitle">اطلاعات بیشتر<i class="bi bi-chevron-left"></i></a>
+                    <a title="مشاهده @proj.Title" class="read-more-link primary-link" asp-controller="Project" asp-action="ShowProject" asp-route-category="@proj.CategoryTitle.Replace(" ", "-")" asp-route-name="@proj.UrlTitle">اطلاعات بیشتر<i class="bi bi-chevron-left"></i></a>
                 </div>
             </article>
         </div>

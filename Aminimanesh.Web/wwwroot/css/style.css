@@ -61,6 +61,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 h1,
@@ -426,7 +427,7 @@ ul {
     color: var(--main-gray);
     font-size: 14px !important;
     font-weight: 500;
-    margin-bottom: 0px !important;
+    margin-bottom: 5px !important;
 }
 
 .sidebar > .profile > .secondry-job {
@@ -686,6 +687,7 @@ ul {
     z-index: 4;
 }
 
+.landing > .discover > div > h1,
 .landing > .discover > div > h2 {
     font-size: 30px;
     font-weight: 900;
@@ -782,7 +784,7 @@ ul {
     justify-content: space-between;
 }
 
-    .services .service h5 {
+    .services .service h3 {
         margin-bottom: 15px !important;
     }
 
@@ -929,7 +931,7 @@ ul {
         margin-bottom: 20px;
     }
 
-    .timeline h5 {
+    .timeline h3 {
         margin-bottom: 5px !important;
     }
 
