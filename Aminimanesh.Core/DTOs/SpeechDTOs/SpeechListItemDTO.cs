@@ -12,5 +12,7 @@ namespace Aminimanesh.Core.DTOs.SpeechDTOs
         public int SpeechId { get; set; }
 
         public string Text { get; set; }
+
+        public int Priority { get; set; } = 1;
     }
 }

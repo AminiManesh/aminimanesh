@@ -57,7 +57,7 @@
                        placeholder="Short Description">
             </div>
             <div class="form-group">
-                <textarea class="form-control" asp-for="@Model.Description" placeholder="Description" value="@Model.Description"></textarea>
+                <textarea class="html-editor form-control" asp-for="@Model.Description" placeholder="Description" value="@Model.Description"></textarea>
             </div>
 
             <div class="form-group row">
@@ -88,6 +88,12 @@
                 </label>
                 <img src="/owner/projects/@Model.ProjectId/cover/thumbnail/@Model.Thumbnail" class="img-thumbnail d-block mt-2 mx-auto" width="600" id="thumbnailPreview" />
             </div>
+            <div class="form-group row">
+                <div class="col-3">
+                    <input type="number" class="form-control" asp-for="@Model.Priority" min="1" value="@Model.Priority"
+                           placeholder="Priority">
+                </div>
+            </div>
             <div class="form-group">
                 <div class="custom-control custom-checkbox small">
                     <input type="checkbox" class="custom-control-input" asp-for="@Model.IsFinished" value="@Model.IsFinished">
@@ -112,6 +118,7 @@
                                         <th>Thumbnail</th>
                                         <th>Title</th>
                                         <th>Description</th>
+                                        <th>Priority</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -131,6 +138,7 @@
                                             </td>
                                             <td>@attachment.ShowName</td>
                                             <td>@attachment.ShortDescription</td>
+                                            <td>@attachment.Priority</td>
                                             <th>
                                                 <a asp-area="Admin" asp-controller="Project" asp-action="DownloadAttachment" asp-route-id="@attachment.AttachmentId" class="btn btn-success btn-sm btn-icon-split open-attachment">
                                                     <span class="icon text-white-50">
@@ -138,7 +146,7 @@
                                                     </span>
                                                     <span class="text d-none d-lg-flex">Download Attachment</span>
                                                 </a>
-                                                <button type="button" onclick="openEditAttchmentModal(@attachment.AttachmentId, '@attachment.ShowName', '@attachment.ShortDescription')" class="btn btn-info btn-sm btn-icon-split">
+                                                <button type="button" onclick="openEditAttchmentModal(@attachment.AttachmentId, '@attachment.ShowName', '@attachment.ShortDescription', @attachment.Priority)" class="btn btn-info btn-sm btn-icon-split">
                                                     <span class="icon text-white-50">
                                                         <i class="bi bi-pencil-fill"></i>
                                                     </span>
@@ -188,6 +196,12 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="shortDes" placeholder="Short Description">
                         </div>
+                        <div class="form-group row">
+                            <div class="col-3">
+                                <input type="number" class="form-control" name="priority" min="1" value="1"
+                                       placeholder="Priority">
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -215,12 +229,13 @@
 
     <script>
 
-        function openEditAttchmentModal(attachmentId, attachmentName, shortDes) {
+        function openEditAttchmentModal(attachmentId, attachmentName, shortDes, priority) {
             $('#editModalLabel').text(attachmentName);
 
             $('#editAttachmentForm input[name="attachmentId"]').val(attachmentId);
             $('#editAttachmentForm input[name="showName"]').val(attachmentName);
             $('#editAttachmentForm input[name="shortDes"]').val(shortDes);
+            $('#editAttachmentForm input[name="priority"]').val(priority);
 
             $("#editAttachmentModal").modal('show');
         }
@@ -231,10 +246,11 @@
             var attachmentId = $('#editAttachmentForm input[name="attachmentId"]').val();
             var attachmentName = $('#editAttachmentForm input[name="showName"]').val();
             var shortDes = $('#editAttachmentForm input[name="shortDes"]').val();
+            var priority = $('#editAttachmentForm input[name="priority"]').val();
 
             $.ajax({
                 type: 'post',
-                url: '/edit-attachment?attachmentId=' + attachmentId + "&attachmentName=" + attachmentName + "&shortDescription=" + shortDes,
+                url: '/edit-attachment?attachmentId=' + attachmentId + "&attachmentName=" + attachmentName + "&shortDescription=" + shortDes + "&priority=" + priority,
                 success: function (response) {
                     if (response.success) {
                         location.reload();

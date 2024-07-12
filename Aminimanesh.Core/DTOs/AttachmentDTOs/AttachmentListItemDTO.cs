@@ -20,5 +20,7 @@ namespace Aminimanesh.Core.DTOs.AttachmentDTOs
         public string ShortDescription { get; set; } = null!;
 
         public bool IsImage { get; set; }
+
+        public int Priority { get; set; } = 1;
     }
 }

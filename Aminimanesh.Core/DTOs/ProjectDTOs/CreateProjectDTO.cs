@@ -55,5 +55,9 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
         [Display(Name = "لینک مشاهده پروژه")]
         [Url(ErrorMessage = "فرمت {0} صحیح نیست.")]
         public string? Url { get; set; }
+
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
     }
 }

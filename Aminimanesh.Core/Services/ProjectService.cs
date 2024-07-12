@@ -53,11 +53,12 @@ namespace Aminimanesh.Core.Services
             return exists;
         }
 
-        public async Task<int> UpdateAttachment(int attachmentId, string attachmentName, string shortDescription)
+        public async Task<int> UpdateAttachment(int attachmentId, string attachmentName, string shortDescription, int priority)
         {
             var attachment = await _context.Attachments.FindAsync(attachmentId);
             attachment.ShowName = attachmentName;
             attachment.ShortDescription = shortDescription;
+            attachment.Priority = priority;
             _context.Attachments.Update(attachment);
             await _context.SaveChangesAsync();
             return attachment.AttachmentId;
@@ -109,7 +110,7 @@ namespace Aminimanesh.Core.Services
 
         public async Task<EditProjectDTO> GetProjectByIdForEditAsync(int projectId)
         {
-            var proj = await _context.Projects.Include(p => p.Attachments).SingleOrDefaultAsync(p => p.ProjectId == projectId);
+            var proj = await _context.Projects.Include(p => p.Attachments.OrderBy(a => a.Priority)).SingleOrDefaultAsync(p => p.ProjectId == projectId);
             return _mapper.Map<EditProjectDTO>(proj);
         }
 
@@ -118,7 +119,7 @@ namespace Aminimanesh.Core.Services
             var project = await _context.Projects
                 .IgnoreQueryFilters()
                 .Include(p => p.Category)
-                .Include(p => p.Attachments)
+                .Include(p => p.Attachments.OrderBy(a => a.Priority))
                 .SingleAsync(p => p.UrlTitle == projectName && !p.IsDeleted);
             return _mapper.Map<ProjectGeneralDTO>(project);
         }
@@ -128,7 +129,8 @@ namespace Aminimanesh.Core.Services
             IQueryable<Project> result = _context.Projects
                 .IgnoreQueryFilters()
                 .Include(p => p.Category)
-                .Where(p => !p.IsDeleted);
+                .Where(p => !p.IsDeleted)
+                .OrderBy(p => p.Priority);
 
             if (categoryId > 0)
             {

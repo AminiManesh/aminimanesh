@@ -13,6 +13,8 @@ namespace Aminimanesh.Core.DTOs.HistoryDTOs
 
         public string Title { get; set; }
 
+        public int Priority { get; set; } = 1;
+
         public List<HistoryListItemDTO> Histories { get; set; }
     }
 }

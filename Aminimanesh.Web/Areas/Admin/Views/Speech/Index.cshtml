@@ -34,6 +34,7 @@
                 <thead>
                     <tr>
                         <th>Text</th>
+                        <th>Priority</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -42,6 +43,7 @@
                     {
                         <tr>
                             <td>@Speech.Text</td>
+                            <td>@Speech.Priority</td>
                             <th>
                                 <a asp-area="Admin" asp-controller="Speech" asp-action="EditSpeech" asp-route-id="@Speech.SpeechId" class="btn btn-info btn-sm btn-icon-split">
                                     <span class="icon text-white-50">

@@ -25,6 +25,10 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Required]
         public bool IsDeleted { get; set; }
 
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
+
 
         #region Relations
         public ICollection<History> Histories { get; set; } = new List<History>();

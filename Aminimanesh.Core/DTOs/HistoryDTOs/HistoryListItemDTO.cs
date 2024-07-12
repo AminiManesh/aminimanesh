@@ -24,5 +24,7 @@ namespace Aminimanesh.Core.DTOs.HistoryDTOs
         public string LinkAddress { get; set; }
 
         public string LinkLabel { get; set; }
+
+        public int Priority { get; set; } = 1;
     }
 }

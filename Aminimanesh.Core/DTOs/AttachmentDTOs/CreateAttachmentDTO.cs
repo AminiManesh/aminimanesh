@@ -29,5 +29,9 @@ namespace Aminimanesh.Core.DTOs.AttachmentDTOs
 
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public bool IsImage { get; set; }
+
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
     }
 }

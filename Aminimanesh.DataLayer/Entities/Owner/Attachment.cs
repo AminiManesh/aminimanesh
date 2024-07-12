@@ -38,6 +38,10 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public bool IsImage { get; set; }
 
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
+
         #region Relations
         public Project Project { get; set; }
         #endregion

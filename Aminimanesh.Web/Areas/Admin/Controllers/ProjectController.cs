@@ -283,9 +283,9 @@ namespace Aminimanesh.Web.Areas.Admin.Controllers
         }
 
         [Route("edit-attachment")]
-        public async Task<IActionResult> EditAttachment(int attachmentId, string attachmentName, string shortDescription)
+        public async Task<IActionResult> EditAttachment(int attachmentId, string attachmentName, string shortDescription, int priority)
         {
-            await _projectService.UpdateAttachment(attachmentId, attachmentName, shortDescription);
+            await _projectService.UpdateAttachment(attachmentId, attachmentName, shortDescription, priority);
             return new JsonResult(new { success = true });
         }
 

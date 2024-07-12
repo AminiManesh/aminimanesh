@@ -73,7 +73,7 @@ namespace Aminimanesh.Core.Services
 
         public async Task<List<HistoryLineListItemDTO>> GetAllHistoryLinesAsync()
         {
-            var lines = await _context.HistoryLines.Include(hl => hl.Histories).ToListAsync();
+            var lines = await _context.HistoryLines.Include(hl => hl.Histories).OrderBy(hl => hl.Priority).ToListAsync();
             return _mapper.Map<List<HistoryLineListItemDTO>>(lines);
         }
 
@@ -149,7 +149,7 @@ namespace Aminimanesh.Core.Services
 
         public async Task<List<HistoryListItemDTO>> GetLineHistoriesAsync(int lineId)
         {
-            var histories = await _context.Histories.Where(h => h.HistoryLineId == lineId).ToListAsync();
+            var histories = await _context.Histories.Where(h => h.HistoryLineId == lineId).OrderBy(h => h.Priority).ToListAsync();
             return _mapper.Map<List<HistoryListItemDTO>>(histories);
         }
 

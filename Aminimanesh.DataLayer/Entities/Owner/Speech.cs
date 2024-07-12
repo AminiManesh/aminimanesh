@@ -16,5 +16,9 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         [MaxLength(200, ErrorMessage = "{0} نمی‌تواند بیشتر از {1} کاراکتر باشد.")]
         public string Text { get; set; }
+
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
     }
 }

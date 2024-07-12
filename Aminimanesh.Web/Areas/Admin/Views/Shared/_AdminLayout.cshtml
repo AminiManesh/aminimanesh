@@ -287,7 +287,9 @@
 			}
 		};
 
-		ClassicEditor.create(document.querySelector('#Description'), editorConfig);
+		$('.html-editor').each(function () {
+			ClassicEditor.create(this, editorConfig);
+		});
     </script>
     @RenderSection("Scripts", false)
 

@@ -72,6 +72,10 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Url(ErrorMessage = "فرمت {0} صحیح نیست.")]
         public string? Url { get; set; }
 
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
+
         #region Relations
         public List<Attachment> Attachments { get; set; }
 

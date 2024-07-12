@@ -54,13 +54,13 @@ namespace Aminimanesh.Core.Services
 
         public async Task<List<ServiceListItemDTO>> GetAllServicesAsync()
         {
-            var services = await _context.Services.ToListAsync();
+            var services = await _context.Services.OrderBy(s => s.Priority).ToListAsync();
             return _mapper.Map<List<ServiceListItemDTO>>(services);
         }
 
         public async Task<List<SpeechListItemDTO>> GetAllSpeechsAsync()
         {
-            var speech = await _context.Speechs.ToListAsync();
+            var speech = await _context.Speechs.OrderBy(s => s.Priority).ToListAsync();
             return _mapper.Map<List<SpeechListItemDTO>>(speech);
         }
 

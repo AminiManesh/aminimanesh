@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g4FN7D6piSdN22LekIZ69bkrbaF6d1BopPw85oTugLM=",
+  "Hash": "hP/Cc+chmp0rTNhnvP+Dv2eo3KWoXh1D/2pBvTBKEGo=",
   "Source": "Aminimanesh.Web",
   "BasePath": "_content/Aminimanesh.Web",
   "Mode": "Default",
@@ -78107,6 +78107,25 @@
       "OriginalItemSpec": "wwwroot\\owner\\projects\\2015\\attachments\\8a0a9b02cfb74922a48de80f6c7a05af.jpg"
     },
     {
+      "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\93d0c46c4ce54a6f881c9970a6ecb02a.jpg",
+      "SourceId": "Aminimanesh.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\",
+      "BasePath": "_content/Aminimanesh.Web",
+      "RelativePath": "owner/projects/2015/attachments/93d0c46c4ce54a6f881c9970a6ecb02a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\owner\\projects\\2015\\attachments\\93d0c46c4ce54a6f881c9970a6ecb02a.jpg"
+    },
+    {
       "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\a36c4b86d69e47cea4175d219806cdd1.jpg",
       "SourceId": "Aminimanesh.Web",
       "SourceType": "Discovered",
@@ -78164,6 +78183,25 @@
       "OriginalItemSpec": "wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\8a0a9b02cfb74922a48de80f6c7a05af.jpg"
     },
     {
+      "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\93d0c46c4ce54a6f881c9970a6ecb02a.jpg",
+      "SourceId": "Aminimanesh.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\",
+      "BasePath": "_content/Aminimanesh.Web",
+      "RelativePath": "owner/projects/2015/attachments/thumbnails/93d0c46c4ce54a6f881c9970a6ecb02a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\93d0c46c4ce54a6f881c9970a6ecb02a.jpg"
+    },
+    {
       "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\2015\\attachments\\thumbnails\\a36c4b86d69e47cea4175d219806cdd1.jpg",
       "SourceId": "Aminimanesh.Web",
       "SourceType": "Discovered",
@@ -78219,6 +78257,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\owner\\projects\\2015\\cover\\thumbnail\\Presentation.jpg"
+    },
+    {
+      "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\3014\\cover\\discover-min.jpg",
+      "SourceId": "Aminimanesh.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\",
+      "BasePath": "_content/Aminimanesh.Web",
+      "RelativePath": "owner/projects/3014/cover/discover-min.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\owner\\projects\\3014\\cover\\discover-min.jpg"
+    },
+    {
+      "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\owner\\projects\\3014\\cover\\thumbnail\\discover-min.jpg",
+      "SourceId": "Aminimanesh.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\",
+      "BasePath": "_content/Aminimanesh.Web",
+      "RelativePath": "owner/projects/3014/cover/thumbnail/discover-min.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\owner\\projects\\3014\\cover\\thumbnail\\discover-min.jpg"
     }
   ]
 }

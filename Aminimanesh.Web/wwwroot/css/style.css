@@ -193,6 +193,8 @@ ul {
     font-weight: 500;
     font-style: italic;
     color: var(--main-gray);
+    direction: ltr;
+    text-align: right;
 }
 
 .primary-label {

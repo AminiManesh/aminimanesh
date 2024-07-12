@@ -56,6 +56,9 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Display(Name = "مسیر لینک")]
         public string? LinkLabel { get; set; }
 
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
 
         #region Relations
         public virtual HistoryLine? HistoryLine { get; set; }

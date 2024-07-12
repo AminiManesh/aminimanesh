@@ -24,5 +24,7 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
         public string Thumbnail { get; set; }
 
         public string CategoryTitle { get; set; }
+
+        public int Priority { get; set; } = 1;
     }
 }

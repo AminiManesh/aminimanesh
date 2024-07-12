@@ -26,5 +26,9 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Display(Name = "توضیحات سرویس")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string Description { get; set; }
+
+        [Display(Name = "اولویت")]
+        [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
+        public int Priority { get; set; } = 1;
     }
 }
