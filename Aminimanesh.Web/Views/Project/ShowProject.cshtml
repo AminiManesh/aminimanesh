@@ -54,7 +54,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item active"><a asp-controller="Home" asp-action="Index" class="primary-link" title="صفحه اصلی">صفحه اصلی</a></li>
         <li class="breadcrumb-item active"><a asp-controller="Home" asp-action="Index" asp-fragment="portfolio" class="primary-link" title="نمونه کارهای محمد امین امینی منش">نمونه کار‌ها</a></li>
-        <li class="breadcrumb-item active"><a href="#" class="primary-link" title="نمونه کارهای @Model.Category.Title">@Model.Category.Title</a></li>
+        <li class="breadcrumb-item active"><a class="primary-link" title="نمونه کارهای @Model.Category.Title">@Model.Category.Title</a></li>
         <li class="breadcrumb-item" aria-current="page">@Model.Title</li>
     </ol>
 </nav>
@@ -68,7 +68,7 @@
                 @foreach (var image in Model.Attachments.Where(a => a.IsImage))
                 {
                     <div class="owl-item">
-                        <a href="#" title="@image.ShortDescription" data-fancybox="gallery-@image.ProjectId" data-caption="@image.ShortDescription" data-src="/owner/projects/@image.ProjectId/attachments/@image.FileName" class="open-image">
+                        <a title="@image.ShortDescription" data-fancybox="gallery-@image.ProjectId" data-caption="@image.ShortDescription" data-src="/owner/projects/@image.ProjectId/attachments/@image.FileName" class="open-image">
                             <span class="expander"><i class="bi bi-fullscreen"></i></span>
                             <img src="/owner/projects/@image.ProjectId/attachments/thumbnails/@image.FileName" alt="@image.ShortDescription" title="@image.ShortDescription">
                         </a>
