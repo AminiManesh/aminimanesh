@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aminimanesh.DataLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dbac4b8cffbf38e882faf6d6529b96f930e07a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42e92f7aa0f99d8f14823f9df6670e9db3262359")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aminimanesh.DataLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aminimanesh.DataLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

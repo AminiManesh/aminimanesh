@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aminimanesh.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45ccf735ab817ba36dfb6da12dc920b739abd0cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42e92f7aa0f99d8f14823f9df6670e9db3262359")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aminimanesh.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aminimanesh.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

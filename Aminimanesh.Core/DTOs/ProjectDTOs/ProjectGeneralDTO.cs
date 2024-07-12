@@ -31,7 +31,7 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
 
         public string CustomerName { get; set; }
 
-        public string CustomerLocation { get; set; }
+        public string WebsiteCategory { get; set; }
 
         public string? Url { get; set; }
 

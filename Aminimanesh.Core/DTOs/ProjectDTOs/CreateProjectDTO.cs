@@ -47,9 +47,9 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string CustomerName { get; set; }
 
-        [Display(Name = "لوکیشن مشتری پروژه")]
+        [Display(Name = "دسته‌بندی")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        public string CustomerLocation { get; set; }
+        public string WebsiteCategory { get; set; }
 
         [MaxLength]
         [Display(Name = "لینک مشاهده پروژه")]

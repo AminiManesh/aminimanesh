@@ -23,16 +23,6 @@ namespace Aminimanesh.Core.DTOs.ProjectDTOs
 
         public string Thumbnail { get; set; }
 
-        public string OrderDate { get; set; }
-
-        public string FinishDate { get; set; }
-
-        public bool IsFinished { get; set; }
-
-        public string CustomerName { get; set; }
-
-        public string CustomerLocation { get; set; }
-
         public string CategoryTitle { get; set; }
     }
 }

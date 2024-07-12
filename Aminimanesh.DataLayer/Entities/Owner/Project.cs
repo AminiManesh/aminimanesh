@@ -60,9 +60,9 @@ namespace Aminimanesh.DataLayer.Entities.Owner
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
         public string CustomerName { get; set; }
 
-        [Display(Name = "لوکیشن مشتری پروژه")]
+        [Display(Name = "دسته‌بندی")]
         [Required(ErrorMessage = "{0} نمی‌تواند خالی باشد.")]
-        public string CustomerLocation { get; set; }
+        public string WebsiteCategory { get; set; }
 
         [Required]
         public bool IsDeleted { get; set; }
