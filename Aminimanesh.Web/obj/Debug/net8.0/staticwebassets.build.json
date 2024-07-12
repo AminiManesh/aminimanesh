@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hP/Cc+chmp0rTNhnvP+Dv2eo3KWoXh1D/2pBvTBKEGo=",
+  "Hash": "sNJ88WnRbDM5/EJXIGxJPc2XLRgS3uGTnayLS8Wugjw=",
   "Source": "Aminimanesh.Web",
   "BasePath": "_content/Aminimanesh.Web",
   "Mode": "Default",
@@ -78295,6 +78295,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\owner\\projects\\3014\\cover\\thumbnail\\discover-min.jpg"
+    },
+    {
+      "Identity": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\robots.txt",
+      "SourceId": "Aminimanesh.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming Files\\ASP.Net Core Projects\\aminimanesh\\Aminimanesh.Web\\wwwroot\\",
+      "BasePath": "_content/Aminimanesh.Web",
+      "RelativePath": "robots.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\robots.txt"
     }
   ]
 }
